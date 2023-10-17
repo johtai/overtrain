@@ -16,4 +16,11 @@ class SessionsController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    session.delete(:user_id)
+    redirect_to '/', notice: 'Вы вышли из аккаунта'
+  end
+
+
 end
