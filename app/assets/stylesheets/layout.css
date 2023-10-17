@@ -1,0 +1,40 @@
+
+
+.container, .navbar
+{
+ padding: 5px;
+}
+
+
+.navbar
+{
+    background-color: #730E15;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar a
+{
+color: white;
+text-decoration: none;
+}
+
+.flash
+{
+
+margin: 8px 0px;
+padding: 5px;
+background: bisque;
+font-size: large;
+}
+
+.logo
+{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}

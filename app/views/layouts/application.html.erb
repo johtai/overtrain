@@ -11,11 +11,29 @@
   </head>
 
   <body>
-  <div class="wrapper"></div>
+  <div class="wrapper">
+  <div class="navbar">
+
+    <p class="logo"><%= link_to "OverTrain", root_path %></p>
+    <div>
+       <%if current_user.present?  %>
+        <p><%= "@ #{current_user.nickname}"   %></p>
+       <%else %>
+       <%= link_to 'Регистрация', new_user_path %>
+        <%= link_to 'Вход', new_session_path %>
+       <%end %>
+    </div>
+
+
+
+  </div>
+
+
+
   <% if flash[:notice].present? %>
-    <p><%= flash[:notice]  %></p>
+    <p class="flash"><%= flash[:notice]  %></p>
   <% elsif  flash[:alert].present?%>
-  <p><%= flash[:alert] %></p>
+  <p class="flash"><%= flash[:alert] %></p>
   <%end %>
 
 
