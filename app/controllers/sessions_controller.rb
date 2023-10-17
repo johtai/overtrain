@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     user_params = params.require(:session)
 
-    user = User.find_by(nickname: user_params[:nickname])
+    user = User.find_by(nickname: user_params[:nickname])&.authenticate(user_params[:password])
 
     if user.present?
       session[:user_id] = user.id
