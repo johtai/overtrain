@@ -1,6 +1,8 @@
-<%= form_tag('/get_username') do -%>
-  <div><%=text_field_tag 'answer'%></div>
-  <div><%= submit_tag 'Submit' %></div>
+<%= form_with url: '/get_username', method: :post  do |form| %>
+  <div><%=form.label 'Find account'%></div>
+  <div><%=form.text_field 'answer' %></div>
+  <div><%=form.submit 'Search' %></div>
 <% end -%>
+
 
 <%=@response -%>

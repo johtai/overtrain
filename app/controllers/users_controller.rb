@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     user_params = params.require(:user).permit(:nickname, :password)
     User.create(user_params)
+
     redirect_to '/', notice:'Вы успешно зарегистрировались! '
   end
 end
