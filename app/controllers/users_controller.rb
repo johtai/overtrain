@@ -9,4 +9,15 @@ class UsersController < ApplicationController
 
     redirect_to '/', notice:'Вы успешно зарегистрировались! '
   end
+
+  def show
+    @se = params[:facc]
+
+
+    #puts("se = " + @se)
+
+
+  end
+
+
 end
