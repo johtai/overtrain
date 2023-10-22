@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -18,7 +18,7 @@
     <div>
        <%if current_user.present?  %>
         <p><%= "@ #{current_user.nickname}"   %></p>
-        <p><%=button_to 'Выйти', session_path, method: :delete, class: 'mr-sm' %></p>
+        <p><%=button_to 'Выйти', session_path, method: :delete, class: 'mr-sm' %> </p>
        <%else %>
        <%= link_to 'Регистрация', new_user_path %>
         <%= link_to 'Вход', new_session_path %>
@@ -40,5 +40,19 @@
 
     <%= yield %>
   </div>
+
+  <h3>-</h3>
+  <h3>-</h3>
+  <h3>-</h3>
+  <h3>-</h3>
+
+  <footer>
+
+    <h3>dsa</h3>
+
+
+
+
+  </footer>
   </body>
 </html>

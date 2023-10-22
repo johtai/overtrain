@@ -1,10 +1,8 @@
-<%= form_with url: "/get_username", method: :get, local: true  do |form| %>
+<%= form_with url: "/get_username", method: :get, class: "search",  local: true  do |form| %>
 
-  <p><%=form.label  :facc, 'Find account'%></p>
   <p><%=form.text_field :facc %></p>
+  <button  type="submit" class="submit"><i class="fa fa-search"></i></button>
 
-  <p><%=form.submit 'Search' %></p>
 <% end %>
-<div>S!</div>
 
 <%=@response %>

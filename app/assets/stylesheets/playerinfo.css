@@ -1,0 +1,22 @@
+.playerinfo{
+    padding: 2px 10px 9px 10px;
+    max-width: 200px;
+    background: bisque;
+    margin: 10px;
+
+
+}
+
+.playerinfo p{
+    background: #730E15;
+    color: white;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.playerinfo h1, h3{
+
+    text-align: center;
+}

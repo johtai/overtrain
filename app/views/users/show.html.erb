@@ -1,2 +1,18 @@
-<div> Hello!2!</div>
-<div><%= get_username(@se) %></div>
+<% a = get_username(@se) %>
+<div><%= a["general"] %></div>
+<h3>total <%= a['general']['total'] %></h3>
+<div class="playerinfo">
+  <h1>General</h1>
+  <p>games played: <%= a['general']['games_played']%> </p>
+  <p>games won: <%= a['general']['games_won'] %></p>
+  <p>games lost: <%= a['general']['games_lost'] %></p>
+  <p>time played: <%= a['general']['time_played'] %></p>
+  <p>winrate: <%= a['general']['winrate'] %></p>
+  <p>kda: <%= a['general']['kda'] %></p>
+  <h3>total</h3>
+  <p>assists: <%= a['general']['total']['assists'] %></p>
+  <p>deaths: <%= a['general']['total']['deaths'] %></p>
+  <p>damage: <%= a['general']['total']['damage'] %></p>
+  <p>healing: <%= a['general']['total']['healing'] %></p>
+
+</div>

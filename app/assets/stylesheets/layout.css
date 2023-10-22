@@ -1,4 +1,8 @@
 
+body
+{
+height: 800px;
+}
 
 .container, .navbar
 {
@@ -38,3 +42,61 @@ font-size: large;
     font-weight: bold;
     color: white;
 }
+
+.btn{
+    font-family: "Bebas Neue Bold";
+    font-size: 15px;
+    background-color: coral;
+    border-radius: 3px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+
+}
+
+.search p
+{
+margin: 5px;
+}
+.search label
+{
+    font-size: larger;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+}
+
+.search #facc
+{
+    display: block;
+    width: 200px;
+    min-width: 50px;
+    padding: 2px;
+    background: bisque;
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.search button
+{
+    background: coral;
+    border-radius: 8px;
+}
+
+
+
+.wrapper
+{
+    flex: 1;
+    min-height: 500px;
+}
+
+
+footer {
+    background-color: #333; /* Цвет фона вашего футера */
+    color: #fff; /* Цвет текста вашего футера */
+    padding: 20px;
+}
+
