@@ -11,12 +11,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @se = params[:facc]
-
-
-    #puts("se = " + @se)
-
-
+    # TODO: НОРМАЛЬНО РЕАЛИЗОВАТЬ В БУДУЩЕМ
+    @username = params[:username]
   end
 
 
