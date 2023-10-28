@@ -9,11 +9,4 @@ class UsersController < ApplicationController
 
     redirect_to '/', notice:'Вы успешно зарегистрировались! '
   end
-
-  def show
-    # TODO: НОРМАЛЬНО РЕАЛИЗОВАТЬ В БУДУЩЕМ
-    @username = params[:username]
-  end
-
-
 end
