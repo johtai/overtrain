@@ -20,3 +20,28 @@
 
     text-align: center;
 }
+
+.uInfo
+{
+    background-color: #670f16;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 3px;
+    color: white;
+}
+.uInfo .fcolor{
+    background-color: rgba(213, 85, 95, 0.9);
+}
+.uInfo .scolor{
+    background-color: rgba(213, 85, 95, 0.9);
+}
+.uInfo a{
+    padding-top: 4px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+}
