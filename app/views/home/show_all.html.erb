@@ -1,10 +1,5 @@
 
 <p>Information</p>
-
-<%= @response %>
-
-
-
 <% @response["results"].each do |res| %>
   <div class="uInfo">
   <a> Player id: <%=  link_to "#{res["player_id"]}", get_username_path(username: res["player_id"]) %></a>
