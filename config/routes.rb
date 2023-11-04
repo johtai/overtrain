@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  post  "/get_username", to: "home#show_all"
-  get   "/get_username", to: "home#show_all"
-
-  get "/error", to: "home#error"
+  match "/get_username" => "home#show_all", via: :get
+  match "/show" => "home#show", via: :get
+  match "/error" => "home#error", via: :get
+  
   root "home#index"
-  #rails routes -g session
+
   resources :users, only: %i[new create]
   resource :session, only: %i[new create destroy]
-  get '/show', to: 'home#show'
 
 end
