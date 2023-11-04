@@ -5,46 +5,21 @@ class HomeController < ApplicationController
   def error
   end
 
-  def show
-    username = helpers.get_username(params[:username])
+  def show_all
+    username_response = helpers.get_all_usernames(params[:username])
 
-    if !username.nil? & !username['error']
-
-      return @response = username
+    if username_response["total"] > 1
+      @response = username_response
+    else
+      usr = username_response["total"] == 1 ? username_response["results"][0]["player_id"] : params[:username]
+      redirect_to show_path(username: usr)
     end
-
-
-    if username['error'] & username.blank?
-      if helpers.get_all_usernames(params[:username])["total"] == 0
-        redirect_to error_path
-      end
-
-
-      if helpers.get_all_usernames(params[:username])["total"] == 1
-        rsp = helpers.get_all_usernames(params[:username])
-        username = rsp['results'][0]['player_id']
-        return @response = helpers.get_username(username)
-
-      end
-
-    end
-
-
-    if(helpers.get_all_usernames(params[:username])["total"] > 1)
-
-      redirect_to show_all_path(username: params[:username])
-    end
-
-
-    #@response = helpers.get_username(username)
   end
 
+  def show
+    username_response = helpers.get_username(params[:username])
+    redirect_to error_path if username_response['error'] == 'Player not found'
 
-
-  def show_all
-    usernames = helpers.get_all_usernames(params[:username])
-    uname = params[:username]
-
-    @response = usernames
+    @response = username_response
   end
 end
