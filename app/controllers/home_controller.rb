@@ -7,13 +7,13 @@ class HomeController < ApplicationController
 
   def show_all
     username_response = helpers.get_all_usernames(params[:username])
-    if username_response["total"] == 1
-      redirect_to show_path(username: username_response["results"][0]["player_id"]) and return
-    elsif username_response["total"] == 0
-      redirect_to show_path(username: params[:username]) and return
-    end
 
-    @response = username_response
+    if username_response["total"] > 1
+      @response = username_response
+    else
+      usr = username_response["total"] == 1 ? username_response["results"][0]["player_id"] : params[:username]
+      redirect_to show_path(username: usr)
+    end
   end
 
   def show
