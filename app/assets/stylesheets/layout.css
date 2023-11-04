@@ -1,7 +1,10 @@
 
 body
 {
-height: 800px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
 }
 
 .container, .navbar
@@ -12,12 +15,19 @@ height: 800px;
 
 .navbar
 {
-    background-color: #730E15;
+    background-color: rgba(119, 19, 0, 0.71);
+    /*background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);*/
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 100px;
 
+}
+
+
+.login{
+    order: 1;
 }
 
 .navbar a
@@ -67,21 +77,23 @@ margin: 5px;
     font-weight: bold;
 }
 
-.search #facc
+.search #username
 {
     display: block;
-    width: 200px;
+    width: 400px;
+    height: 20px;
     min-width: 50px;
     padding: 2px;
-    background: bisque;
+    background: rgba(255, 255, 255, 0.78);
     font-family: "Trebuchet MS";
     font-size: 15px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .search button
 {
-    background: coral;
+    background: rgba(255, 98, 38, 0.71);
     border-radius: 8px;
 }
 
@@ -90,13 +102,40 @@ margin: 5px;
 .wrapper
 {
     flex: 1;
-    min-height: 500px;
+    min-height: 870px;
+    /*padding: 0px 10px 10px 10px;*/
+    background-color: rgba(255, 255, 255, 0.89);
+    /*background-image: url('/app/assets/images/background.jpeg');*/
+    backdrop-filter: blur(10px);
+    /*border-radius: 40px 40px 0% 0%;*/
 }
 
 
 footer {
-    background-color: #333; /* Цвет фона вашего футера */
-    color: #fff; /* Цвет текста вашего футера */
+    background-color: rgba(220, 219, 219, 0.91); /* Цвет фона вашего футера */
+    color: rgba(117, 117, 40, 0.94); /* Цвет текста вашего футера */
     padding: 20px;
+    display: flex;
+    min-height: 30px;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+
+
+
 }
 
+#content{
+    #margin: 10px;
+    /*padding: 0px 50px 0px 50px;*/
+}
+
+#secondbackgr{
+    /*background-color: rgb(255, 185, 124);*/
+    background-image: url(background.jpeg);
+    /*min-height: 935px;*/
+    min-height: auto;
+
+
+
+}
