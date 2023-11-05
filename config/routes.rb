@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  match "/get_username" => "home#show_all", via: :get
-  match "/show" => "home#show", via: :get
+  match "/search" => "home#search", via: :get
+  match "/username/:username" => "home#show", via: :get
   match "/error" => "home#error", via: :get
   
   root "home#index"
