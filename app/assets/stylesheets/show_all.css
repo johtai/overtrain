@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tablehero
+{
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 3em 0;
+
+
+}
+
+
+.tablehero th h1{
+    font-weight: bold;
+    /*font-size: 2em;*/
+    text-align: left;
+    color: #185875;
+}
+
+
+
+
+.tablehero a
+{
+    text-decoration: none;
+    color: #f96579;
+}
+
+.tablehero a:hover
+{
+    color: #c7c72b;
+}
+
+
+
+.tablehero th, .tablehero td
+{
+    background-color: #1f2739;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;
+}
+
+
+.tablehero td{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 1em;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+/* Background-color of the odd rows */
+.tablehero tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.tablehero tr:nth-child(even) {
+    background-color: #2C3446;
+}

@@ -1,8 +1,20 @@
-<p>Information</p>
-<% @response["results"].each do |res| %>
-  <div class="uInfo">
-  <a> Player id: <%=  link_to "#{res["player_id"]}", get_username_path(username: res["player_id"]) %></a>
-  <p class="fcolor">name: <%= res["name"] %></p>
-  <p class="scolor">url: <%= res['career_url'] %></p>
-  </div>
-<%end%>
+<table class="tablehero">
+  <thead>
+    <tr>
+      <th><h1>Player id</h1></th>
+      <th><h1>Name</h1></th>
+      <th><h1>URL</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @response["results"].each do |res| %>
+    <tr>
+      <td><a><%=  link_to "#{res["player_id"]}", get_username_path(username: res["player_id"]) %></a></td>
+      <td><%= res["name"] %></td>
+      <td><%= res['career_url'] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
