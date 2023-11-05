@@ -10,8 +10,8 @@ class HomeController < ApplicationController
     if username_response["total"] > 1
       @response = username_response
     else
-      usr = username_response["total"] == 1 ? username_response["results"][0]["player_id"] : params[:username]
-      redirect_to "/username/#{usr}"
+      username = username_response["total"] == 1 ? username_response["results"][0]["player_id"] : params[:username]
+      redirect_to "/username/#{username}"
     end
   end
   def show

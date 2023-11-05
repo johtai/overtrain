@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  match "/search" => "home#search", via: :get
-  match "/username/:username" => "home#show", via: :get
-  match "/error" => "home#error", via: :get
+  get "/search" => "home#search"
+  get "/username/:username" => "home#show"
+  get "/error" => "home#error"
   
   root "home#index"
 
