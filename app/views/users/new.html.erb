@@ -1,16 +1,14 @@
-
-<div class=" container">
+<div class=" loginfield">
+  <h2 class = "title">Регистрация</h2>
   <div>
     <%= form_with model: @user do |form| %>
 
-      <p><%= form.label :nickname ,'Your nickname' %></p>
-      <p><%= form.text_field :nickname %></p>
+      <p><%= form.text_field :nickname, placeholder:"Ник", class: 'btn_edit_q' %></p>
 
-      <p><%= form.label :password ,'password' %></p>
-      <p><%= form.password_field :password %></p>
+      <p><%= form.password_field :password, placeholder:"Пароль", class: 'btn_edit_q' %></p>
 
 
-      <p><%= form.submit 'Registr' %></p>
+      <p><%= form.submit 'Регистрация',  class: 'BtnQ' %></p>
 
     <% end %>
   </div>

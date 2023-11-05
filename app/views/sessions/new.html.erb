@@ -1,26 +1,16 @@
-<div class = "container">
-  <h2 class = "title">Вход</h2>
+<div class = "loginfield">
+    <h2 class = "title">Вход</h2>
 
-  <p>Введите свои email и пароль</p>
+    <div>
+      <%= form_with scope: :session, url:session_path, data: {turbo: false } do |form| %>
+        <p><%= form.text_field :nickname, placeholder: "Ник", class: 'btn_edit_q' %></p>
 
+        <p><%= form.password_field :password, placeholder:"Пароль",  class: 'btn_edit_q' %></p>
 
-  <div>
-    <%= form_with scope: :session, url:session_path, data: {turbo: false } do |form| %>
-      <p><%= form.label :nickname, title: "nickname", class: 'title-sm'%></p>
-      <p><%= form.text_field :nickname, class: 'btn_edit_q' %></p>
+        <p class="mt-lg"><%= form.submit 'Войти', class: 'BtnQ ' %></p>
 
-      <p class="mt"><%= form.label :password, tittle:"password", class: 'title-sm'%></p>
-      <p><%= form.password_field :password, class: 'btn_edit_q' %></p>
+      <% end %>
 
-
-      <p class="mt-lg"><%= form.submit 'Войти', class: 'BtnQ ' %></p>
-
-
-    <% end %>
-
-
-
-  </div>
-
+    </div>
 
 </div>

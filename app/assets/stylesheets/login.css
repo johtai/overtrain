@@ -1,0 +1,45 @@
+.loginfield{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 50em;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 300px;
+    background-color: #1f2739;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #a29539;
+
+
+}
+
+.loginfield .btn_edit_q{
+    background-color: #323C50;
+    border-radius: 0px;
+    width: 17em;
+    height: 2em;
+}
+
+.loginfield h2, p{
+    text-align: center;
+    font-weight: bold;
+    color: #e8e8e8;
+    padding: 3px;
+}
+
+
+.loginfield .BtnQ{
+    background-color: #e7910a;
+    box-shadow: #185875;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-weight: bold;
+    width: 11em;
+    height: 3em;
+    border-radius: 10px;
+}
+
+.BtnQ:hover
+{
+    background-color: #ffb23c;
+}
