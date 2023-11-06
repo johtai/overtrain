@@ -19,8 +19,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
-
+    min-height: 50px;
 }
 
 
@@ -30,8 +29,8 @@ body
 
 .navbar a
 {
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
     font-family: "Overwatch Large";
 }
 
@@ -45,15 +44,20 @@ font-size: large;
 
 .logo
 {
-    font-size: 40px;
     color: white;
+    background-color: #c76c2b;
+    border-radius: 10px;
+    font-size: 45px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
 .logo a:hover{
-    color: #e0e007;
+    color: #ffffff;
 
 }
-
 
 .btn{
     font-family: "Bebas Neue Bold";
@@ -106,7 +110,7 @@ margin: 5px;
     flex: 1;
     min-height: 870px;
     /*padding: 0px 10px 10px 10px;*/
-    background-color: rgba(255, 255, 255, 0.84);
+    background-color: rgba(255, 255, 255, 0.7);
     /*background-image: url('/app/assets/images/background.jpeg');*/
     backdrop-filter: blur(10px);
     /*border-radius: 40px 40px 0% 0%;*/
@@ -114,7 +118,7 @@ margin: 5px;
 
 
 footer {
-    background-color: rgba(220, 219, 219, 0.91); /* Цвет фона вашего футера */
+    background-color: rgba(220, 219, 219, 1); /* Цвет фона вашего футера */
     color: rgba(117, 117, 40, 0.94); /* Цвет текста вашего футера */
     padding: 20px;
     display: flex;
@@ -137,7 +141,4 @@ footer {
     background-image: url(background.jpeg);
     /*min-height: 935px;*/
     min-height: auto;
-
-
-
 }
