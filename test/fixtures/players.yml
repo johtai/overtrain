@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kda: 1.5
+  winrate: 1.5
+  avg_elim: 1.5
+  avg_ass: 1.5
+  avg_death: 1.5
+  avg_dam: 1.5
+  avg_heal: 1.5
+
+two:
+  kda: 1.5
+  winrate: 1.5
+  avg_elim: 1.5
+  avg_ass: 1.5
+  avg_death: 1.5
+  avg_dam: 1.5
+  avg_heal: 1.5

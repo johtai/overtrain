@@ -9,7 +9,7 @@
   <tbody>
     <% @response["results"].each do |res| %>
     <tr>
-      <td>  <a><%=  link_to "#{res["player_id"]}", "/username/#{res["player_id"]}" %></a></td>
+      <td> <a><%=  link_to "#{res["player_id"]}", "/username/#{res["player_id"]}" %></a></td>
       <td><%= res["name"] %></td>
       <td><%= res['career_url'] %></td>
     </tr>

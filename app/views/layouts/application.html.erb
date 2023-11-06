@@ -20,10 +20,10 @@
     <div class="login">
        <%if current_user.present?  %>
         <p><%= "@ #{current_user.nickname}"   %></p>
-        <p><%=button_to 'Выйти', session_path, method: :delete, class: 'mr-sm' %> </p>
+        <p><%=button_to 'Log Out', session_path, method: :delete, class: 'mr-sm' %> </p>
        <%else %>
-       <%= link_to 'Регистрация', new_user_path %>
-        <%= link_to 'Вход', new_session_path %>
+       <%= link_to 'Sign Up', new_user_path %>
+        <%= link_to 'Sign In', new_session_path %>
        <%end %>
     </div>
 
