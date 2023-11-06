@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_17_164047) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_06_122156) do
+  create_table "players", force: :cascade do |t|
+    t.float "kda"
+    t.float "winrate"
+    t.float "avg_elim"
+    t.float "avg_ass"
+    t.float "avg_death"
+    t.float "avg_dam"
+    t.float "avg_heal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.string "user_id"
+    t.string "player_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "nickname"
     t.datetime "created_at", null: false
