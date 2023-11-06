@@ -15,62 +15,97 @@ body
 {
     background-color: rgba(119, 19, 0, 0.71);
     /*background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);*/
+    padding: 0 5px 0 5px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
+    min-height: auto;
 
 }
 
+.wrapper
+{
+    flex: 1;
+    min-height: 870px;
+    /*padding: 0px 10px 10px 10px;*/
+    background-color: rgba(255, 255, 255, 0.84);
+    /*background-image: url('/app/assets/images/background.jpeg');*/
+    backdrop-filter: blur(10px);
+    /*border-radius: 40px 40px 0% 0%;*/
+}
 
-.login{
+
+
+
+.login
+{
     order: 1;
 }
 
-.navbar a
+.navbar .logo a
 {
-color: white;
-text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
     font-family: "Overwatch Large";
+    font-size: 40px;
+    padding: 1px;
+}
+
+
+.navbar .login a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Overwatch Large";
+    font-size: larger;
+    font-weight: bold;
+    padding: 2px;
+}
+.navbar .login a:hover{
+    color: #fb8b07;
 }
 
 .flash
 {
-margin: 8px 0px;
-padding: 5px;
-background: bisque;
-font-size: large;
+    margin: 8px 0px;
+    padding: 5px;
+    background: rgba(255, 167, 75, 0.94);
+    color: black;
+    font-weight: bold;
+    font-size: large;
 }
 
 .logo
 {
-    font-size: 40px;
-    color: white;
+    background-color: rgb(253, 140, 7);
+    border-radius: 3px;
+    padding-top: 0;
 }
 
-.logo a:hover{
-    color: #e0e007;
-
+.logo a:hover
+{
+    color: rgba(255, 188, 118, 0.98);
 }
 
 
-.btn{
+.btn
+{
     font-family: "Bebas Neue Bold";
     font-size: 15px;
     background-color: coral;
     border-radius: 3px;
 }
 
-.search{
+.search
+{
     display: flex;
     justify-content: center;
-
 }
 
 .search p
 {
-margin: 5px;
+    margin: 5px;
 }
 .search label
 {
@@ -83,33 +118,54 @@ margin: 5px;
 {
     display: block;
     width: 400px;
-    height: 20px;
-    min-width: 50px;
-    padding: 2px;
-    background: rgba(255, 255, 255, 0.78);
+    height: 23px;
+    padding: 0;
+    background: rgb(57, 67, 87);
     font-family: "Trebuchet MS";
     font-size: 15px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+    color: white;
+
+    /*border: 2px solid #524b4a;*/
+
+}
+
+
+@media (max-width: 500px)
+{
+    .search #username
+    {
+        width: 300px;
+    }
 }
 
 .search button
 {
-    background: rgba(255, 98, 38, 0.71);
-    border-radius: 8px;
+    background: rgba(255, 156, 116, 0.87);
+    border-radius: 20px;
+    width: 39px;
+    height: 39px;
+    margin-top: 2px;
 }
 
 
+#searchcontainer{
+    background-color: #323C50;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3px;
+    padding: 2px;
+    border-radius: 20px;
 
-.wrapper
-{
-    flex: 1;
-    min-height: 870px;
-    /*padding: 0px 10px 10px 10px;*/
-    background-color: rgba(255, 255, 255, 0.84);
-    /*background-image: url('/app/assets/images/background.jpeg');*/
-    backdrop-filter: blur(10px);
-    /*border-radius: 40px 40px 0% 0%;*/
 }
 
 

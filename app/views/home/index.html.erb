@@ -1,8 +1,8 @@
+<div id="searchcontainer">
 <%= form_with url: "/search", method: :get, class: "search",  local: true  do |form| %>
-
-  <p><%=form.text_field :username %></p>
+  <p><%=form.text_field :username, placeholder: "Поиск по игрокам" %></p>
   <button  type="submit" class="submit"><i class="fa fa-search"></i></button>
-
 <% end %>
+</div>
 
 <%=@response %>

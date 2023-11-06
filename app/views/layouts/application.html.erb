@@ -29,14 +29,16 @@
 
 
 
-  <% if flash[:notice].present? %>
-    <p class="flash"><%= flash[:notice]  %></p>
-  <% elsif  flash[:alert].present?%>
-  <p class="flash"><%= flash[:alert] %></p>
-  <%end %>
+
 
 
   </div>
+    <% if flash[:notice].present? %>
+      <p class="flash"><%= flash[:notice]  %></p>
+    <% elsif  flash[:alert].present?%>
+      <p class="flash"><%= flash[:alert] %></p>
+    <%end %>
+
     <%= yield %>
 
   </div>
