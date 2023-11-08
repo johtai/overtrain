@@ -1,5 +1,5 @@
 # overtrain
-**Overtrain** is an open-source website to track your Overwatch 2 stats.
+**Overtrain** is an open-source website to track your Overwatch 2 stats. We use [unofficial public Overwatch 2 API](https://overfast-api.tekrop.fr/) by [@TeKrop](https://github.com/TeKrop/)
 
 ## Features
 - create a free account to track in-game stats
