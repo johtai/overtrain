@@ -3,5 +3,5 @@ class Player < ApplicationRecord
   has_many :users, :through => :subscriptions
 
   validates :player_id, presence: true, uniqueness: true
-  validates :kda, :winrate,:avg_elim, :avg_ass, :avg_death, :avg_dam, :avg_heal, numericality: true
+  validates :player_id, :kda, :winrate,:avg_elim, :avg_ass, :avg_death, :avg_dam, :avg_heal, numericality: true
 end

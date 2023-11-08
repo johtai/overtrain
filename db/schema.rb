@@ -10,9 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_08_111131) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_08_113333) do
+  create_table "gamemodes", force: :cascade do |t|
+    t.string "key"
+    t.string "name"
+    t.string "icon"
+    t.string "desc"
+    t.string "screenshot"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "heros", force: :cascade do |t|
+    t.string "hero_id"
+    t.string "name"
+    t.string "desc"
+    t.string "portrait"
+    t.string "role"
+    t.string "location"
+    t.json "hitpoints"
+    t.json "abilities"
+    t.json "story"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maps", force: :cascade do |t|
+    t.string "name"
+    t.string "screenshot"
+    t.json "gamemodes"
+    t.string "location"
+    t.string "country_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "players", force: :cascade do |t|
-    t.string "player_id"
     t.float "kda"
     t.float "winrate"
     t.float "avg_elim"
@@ -22,6 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_08_111131) do
     t.float "avg_heal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "player_id"
   end
 
   create_table "subscriptions", force: :cascade do |t|
