@@ -6,10 +6,11 @@ Rails.application.routes.draw do
   # TODO
   # get /profile/:user_id
   # get /profile/:user_id/edit
+  # post /profile/:user_id/edit
   # patch /profile/:user_id/edit
   # get /profile/:user_id/subscriptions
   # delete /profile/:user_id/subscriptions
-  # post /profile/:used_id/subscription
+  # post /profile/:used_id/subscriptions
   #
   # get "/wiki"
   # get "/wiki/heroes"
