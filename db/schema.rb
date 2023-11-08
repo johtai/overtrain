@@ -10,8 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_06_122156) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_08_111131) do
   create_table "players", force: :cascade do |t|
+    t.string "player_id"
     t.float "kda"
     t.float "winrate"
     t.float "avg_elim"
@@ -31,7 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_06_122156) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "nickname"
+    t.string "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
