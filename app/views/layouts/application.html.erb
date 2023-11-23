@@ -19,7 +19,7 @@
     <p class="logo"><%= link_to "overtrain", root_path %></p>
     <div class="login">
        <%if current_user.present?  %>
-        <p><%= "@ #{current_user.nickname}"   %></p>
+        <p><%= "@ #{current_user.user_id}"   %></p>
         <p><%=button_to 'Log Out', session_path, method: :delete, class: 'mr-sm' %> </p>
        <%else %>
        <%= link_to 'Sign Up', new_user_path %>
