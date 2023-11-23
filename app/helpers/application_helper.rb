@@ -45,7 +45,7 @@ module ApplicationHelper
       unparsed_response = Net::HTTP.get_response(uri)
       attributes = JSON.parse(unparsed_response.body)
 
-      new_hero = Hero.create(key: hero["key"], name: attributes["name"], description: attributes["description"],
+      new_hero = Hero.create(hero_id: hero["key"], name: attributes["name"], desc: attributes["description"],
                                portrait: attributes["portrait"], role: attributes["role"],
                                location: attributes["location"], hitpoints: attributes["hitpoints"],
                                abilities: attributes["abilities"], story: attributes["story"])
