@@ -1,11 +1,15 @@
 class WikiController < ApplicationController
   def index
+    #@heroes = Hero.all
+    @heroes_by_role = Hero.all.group_by(&:role)
+
   end
 
   def show_heroes
   end
 
   def show_hero
+    @hero = Hero.find(params[:id])
   end
 
   def show_gamemodes

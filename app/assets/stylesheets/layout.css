@@ -8,7 +8,7 @@ body
 
 .container, .navbar
 {
- padding: 5px;
+ /*padding: 5px;*/
 }
 
 .navbar
@@ -19,7 +19,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 
@@ -51,6 +51,7 @@ font-size: large;
     padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
+    margin: 5px;
 
 }
 

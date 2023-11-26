@@ -1,2 +1,20 @@
-<h1>Wiki#index</h1>
-<p>Find me in app/views/wiki/index.html.erb</p>
+<div class="space-between">
+
+  <% @heroes_by_role.each do |role, heroes| %>
+
+    <div id="heroClass">
+    <h2 id = "role"><%= role %></h2>
+
+        <% heroes.each do |hero| %>
+
+        <div id="heroTitle">
+          <p><%= image_tag("#{hero.portrait} ", id:"heroPortrait") %></p>
+
+          <p id="link"><%= link_to "#{hero.name}", "/wiki/heroes/#{hero.id}"  %></p>
+        </div>
+        <% end %>
+      </div>
+  <% end %>
+
+
+</div>
