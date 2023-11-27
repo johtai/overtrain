@@ -16,7 +16,10 @@ module ApplicationHelper
   def get_username_summary(username)
     uri = URI("https://overfast-api.tekrop.fr/players/#{username}/summary")
     unparsed_response = Net::HTTP.get_response(uri)
-    JSON.parse(unparsed_response.body)
+    result = JSON.parse(unparsed_response.body)
+    result["player_id"] = username
+
+    result
   end
   def create_maps_db
     uri = URI("https://overfast-api.tekrop.fr/maps")
