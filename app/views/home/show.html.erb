@@ -6,4 +6,6 @@
   <p>time played: <%= @username_stats['general']['time_played'] %></p>
   <p>winrate: <%= @username_stats['general']['winrate'] %></p>
   <p>kda: <%= @username_stats['general']['kda'] %></p>
+
+  <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @username_stats } %>
 </div>

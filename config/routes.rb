@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "/username/:username" => "home#show"
   get "/error" => "home#error"
 
+  post "/subscribe" => "home#subscribe"
   # TODO
   # get /user/:user_id
   # get /user/:user_id/edit
