@@ -2,8 +2,11 @@ require 'net/http'
 class HomeController < ApplicationController
   def index
   end
+
   def error
   end
+
+  # search for a specific player or all players knowing only a username
   def search
     usernames_response = helpers.get_all_usernames(params[:username])
 
@@ -14,13 +17,17 @@ class HomeController < ApplicationController
       redirect_to "/username/#{username}"
     end
   end
+
+  # render a player page if there is no error
   def show
     username_response = helpers.get_username_stats(params[:username])
     redirect_to error_path if username_response['error'] == 'Player not found'
 
-    @username_summary = helpers.get_username_summary(params[:username])
-    @username_stats = username_response
+    @player_summary = helpers.get_username_summary(params[:username])
+    @player_stats = username_response
   end
+
+  # subscribe to a specific player's stats and create a records in Player and Subscription
   def subscribe
     user_id = session[:user_id]
     player_stats = params[:player_stats]

@@ -1,11 +1,11 @@
 <div class="playerinfo">
   <h1>General</h1>
-  <p>games played: <%= @username_stats['general']['games_played']%> </p>
-  <p>games won: <%= @username_stats['general']['games_won'] %></p>
-  <p>games lost: <%= @username_stats['general']['games_lost'] %></p>
-  <p>time played: <%= @username_stats['general']['time_played'] %></p>
-  <p>winrate: <%= @username_stats['general']['winrate'] %></p>
-  <p>kda: <%= @username_stats['general']['kda'] %></p>
+  <p>games played: <%= @player_stats['general']['games_played']%> </p>
+  <p>games won: <%= @player_stats['general']['games_won'] %></p>
+  <p>games lost: <%= @player_stats['general']['games_lost'] %></p>
+  <p>time played: <%= @player_stats['general']['time_played'] %></p>
+  <p>winrate: <%= @player_stats['general']['winrate'] %></p>
+  <p>kda: <%= @player_stats['general']['kda'] %></p>
 
-  <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @username_stats } %>
+  <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @player_stats } %>
 </div>
