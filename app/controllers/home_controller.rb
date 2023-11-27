@@ -5,19 +5,20 @@ class HomeController < ApplicationController
   def error
   end
   def search
-    username_response = helpers.get_all_usernames(params[:username])
+    usernames_response = helpers.get_all_usernames(params[:username])
 
-    if username_response["total"] > 1
-      @response = username_response
+    if usernames_response["total"] > 1
+      @all_usernames = usernames_response
     else
-      username = username_response["total"] == 1 ? username_response["results"][0]["player_id"] : params[:username]
+      username = usernames_response["total"] == 1 ? usernames_response["results"][0]["player_id"] : params[:username]
       redirect_to "/username/#{username}"
     end
   end
   def show
-    username_response = helpers.get_username(params[:username])
+    username_response = helpers.get_username_stats(params[:username])
     redirect_to error_path if username_response['error'] == 'Player not found'
 
-    @response = username_response
+    @username_summary = helpers.get_username_summary(params[:username])
+    @username_stats = username_response
   end
 end

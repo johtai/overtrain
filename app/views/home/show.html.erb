@@ -1,11 +1,9 @@
-<%= rows = %w[games_played games_won games_lost time_played winrate kda] %>
-<h3>total <%= @response['general']['total'] %></h3>
 <div class="playerinfo">
   <h1>General</h1>
-  <p>games played: <%= @response['general']['games_played']%> </p>
-  <p>games won: <%= @response['general']['games_won'] %></p>
-  <p>games lost: <%= @response['general']['games_lost'] %></p>
-  <p>time played: <%= @response['general']['time_played'] %></p>
-  <p>winrate: <%= @response['general']['winrate'] %></p>
-  <p>kda: <%= @response['general']['kda'] %></p>
+  <p>games played: <%= @username_stats['general']['games_played']%> </p>
+  <p>games won: <%= @username_stats['general']['games_won'] %></p>
+  <p>games lost: <%= @username_stats['general']['games_lost'] %></p>
+  <p>time played: <%= @username_stats['general']['time_played'] %></p>
+  <p>winrate: <%= @username_stats['general']['winrate'] %></p>
+  <p>kda: <%= @username_stats['general']['kda'] %></p>
 </div>
