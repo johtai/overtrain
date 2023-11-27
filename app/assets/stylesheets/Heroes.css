@@ -26,7 +26,7 @@
     height: auto;
     background-color: #185875;
 }
-#heroTitle div:nth-child(even)
+/*#heroTitle div:nth-child(even)
 {
     background-color: #d6e2ff;
 }
@@ -34,7 +34,7 @@
 #heroTitle div:nth-child(odd)
 {
     background-color: #d6e2ff;
-}
+}*/
 
 #role
 {
