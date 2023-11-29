@@ -10,7 +10,10 @@
     margin-left: 5px;
 
 }
-
+a:hover
+{
+    color: wheat;
+}
 #mainHeroTitle p
 {
     color: white;

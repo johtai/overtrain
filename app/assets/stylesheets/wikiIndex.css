@@ -1,0 +1,85 @@
+.space-between
+{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+p a:hover
+{
+    color: wheat;
+}
+
+#heroPortrait
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    border: 3px solid rgba(211, 211, 211, 0.55);
+}
+
+#oneHeroContainer
+{
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: #323c4f;
+}
+
+#link a
+{
+    text-decoration: none;
+    color: white;
+}
+#link
+{
+    text-align: center;
+}
+
+
+#gamemodesContainer
+{
+
+    width: auto;
+    height: auto;
+
+}
+
+#oneGamemodeContainer
+{
+    background-color: #185875;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+
+}
+
+#gamemodeImage
+{
+    width: 100%;
+    height: 150px;
+}
+
+
+#mapsContainer{
+    display: block;
+    flex-wrap: wrap;
+
+}
+
+
+#oneMapContainer
+{
+    background-color: #323c50;
+    margin: 10px;
+}
+
+
+#mapImage
+{
+    width: 314px;
+    height: 230px;
+    border: 2px solid rgba(48, 133, 136, 0.7);
+
+}

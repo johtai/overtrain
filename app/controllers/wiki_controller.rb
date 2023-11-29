@@ -1,7 +1,9 @@
 class WikiController < ApplicationController
   def index
-    #@heroes = Hero.all
-    @heroes_by_role = Hero.all.group_by(&:role)
+    @heroes = Hero.all
+    #@heroes_by_role = Hero.all.group_by(&:role)
+    @maps = Map.all
+    @gamemodes = Gamemode.all
 
   end
 

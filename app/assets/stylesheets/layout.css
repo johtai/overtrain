@@ -57,9 +57,12 @@ font-size: large;
 
 .logo a:hover{
     color: #ffffff;
-
 }
 
+a:hover
+{
+    color: wheat;
+}
 .btn{
     font-family: "Bebas Neue Bold";
     font-size: 15px;
