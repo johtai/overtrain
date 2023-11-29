@@ -3,7 +3,7 @@
   <p>games played: <%= @player_stats['general']['games_played']%> </p>
   <p>games won: <%= @player_stats['general']['games_won'] %></p>
   <p>games lost: <%= @player_stats['general']['games_lost'] %></p>
-  <p>time played: <%= @player_stats['general']['time_played'] %></p>
+  <p>time played: <%= get_hours(@player_stats['general']['time_played']) %></p>
   <p>winrate: <%= @player_stats['general']['winrate'] %></p>
   <p>kda: <%= @player_stats['general']['kda'] %></p>
 
