@@ -7,7 +7,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @response["results"].each do |res| %>
+    <% @all_usernames["results"].each do |res| %>
     <tr>
       <td><a><%=  link_to "#{res["player_id"]}", "/username#{res["player_id"]}" %></a></td>
       <td><%= res["name"] %></td>
@@ -19,7 +19,7 @@
 
 
 <p>Information</p>
-<% @response["results"].each do |res| %>
+<% @all_usernames["results"].each do |res| %>
   <div class="uInfo">
   <a> Player id: <%=  link_to "#{res["player_id"]}", "/username/#{res["player_id"]}" %></a>
   <p class="fcolor">name: <%= res["name"] %></p>

@@ -2,3 +2,8 @@
   font-family: "Overwatch Large";
   src: url('large.ttf');
 }
+
+@font-face {
+  font-family: "Overwatch Small";
+  src: url('small.ttf');
+}

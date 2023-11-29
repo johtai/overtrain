@@ -1,3 +1,8 @@
+body
+{
+}
+
+
 #mainHeroTitle
 {
 
@@ -33,17 +38,20 @@ a:hover
 }
 #abilities
 {
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: "Overwatch Large";
     font-weight: bold;
-    background-color: #b49191;
+    background-color: rgba(0, 0, 10, 0.62);
+    backdrop-filter: blur(5px);
 }
 
 #abilImage
 {
     max-width: 85px;
     max-height: 85px;
-    border: 3px solid white;
-    border-radius: 3px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    padding: 16px;
+
 }
 
 #abl
@@ -58,10 +66,12 @@ a:hover
 #abilTitle
 {
     display: block;
-    background-color: #185875;
-    min-width: 230px;
+    /*background-color: #185875;*/
+    min-width: 280px;
     margin: 3px 0 3px 0;
-    padding: 5px;
+    padding: 10px 0 0 0 ;
+    justify-content: center;
+    text-align: center;
 }
 
 #abilTitle p
@@ -69,6 +79,9 @@ a:hover
     text-align: left;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
+    font-family: "Overwatch Large";
+
 }
 
 #abilContent
@@ -81,10 +94,11 @@ a:hover
 
 #abilContent p
 {
+    font-family: "Overwatch Small";
+    letter-spacing: .1rem;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 35px;
+
 }
 
