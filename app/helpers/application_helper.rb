@@ -13,6 +13,9 @@ module ApplicationHelper
     unparsed_response = Net::HTTP.get_response(uri)
     JSON.parse(unparsed_response.body)
   end
+  def get_hours (time)
+    time / 3600
+  end
   def get_username_summary(username)
     uri = URI("https://overfast-api.tekrop.fr/players/#{username}/summary")
     unparsed_response = Net::HTTP.get_response(uri)
