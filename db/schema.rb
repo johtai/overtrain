@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_08_133218) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_01_112919) do
   create_table "gamemodes", force: :cascade do |t|
     t.string "key"
     t.string "name"
@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_08_133218) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "player_id"
+    t.date "dump_date"
   end
 
   create_table "subscriptions", force: :cascade do |t|
