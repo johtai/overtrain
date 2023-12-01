@@ -8,4 +8,5 @@
   <p>kda: <%= @player_stats['general']['kda'] %></p>
 
   <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @player_stats } %>
+  <%= button_to "update_player_stats", "/update_player_stats", method: :post, params: { :player_stats => @player_stats } %>
 </div>

@@ -31,19 +31,15 @@ class HomeController < ApplicationController
   def subscribe
     user_id = session[:user_id]
     player_stats = params[:player_stats]
-    player_id = player_stats["player_id"]
 
-    subs = Subscription.where(:user_id => user_id, :player_id => player_id)
-    player = Player.where(:player_id => player_id)
+    subs = Subscription.where(:user_id => user_id, :player_id => player_stats["player_id"])
 
-    redirect_to error_path if subs.present? or player.present?
 
-    #Player.create(:kda => player_stats["kda"], :winrate => player_stats["winrate"],
-    #              :avg_elim => player_stats['average']['eliminations'],
-    #              :avg_ass => player_stats['average']['assists'],
-    #              :avg_dam => player_stats['average']['damage'],
-    #              :avg_death => player_stats['average']['deaths'],
-    #              :avg_heal => player_stats['average']['healing'])
-    #Subscription.create({ :user_id => user_id, :player_id => player_id })
+    Subscription.create({ :user_id => user_id, :player_id => player_stats["player_id"] })
+
+
+    helpers.update_player_stats(player_stats)
+
+    #redirect_to "/username:#{player_stats["player_id"]}"
   end
 end
