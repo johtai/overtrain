@@ -14,7 +14,11 @@ module ApplicationHelper
     JSON.parse(unparsed_response.body)
   end
   def get_hours (time)
-    time / 3600
+    if (time < 180000)
+      return (time / 3600.0).round(1)
+    else
+      return (time / 3600)
+    end
   end
   def get_username_summary(username)
     uri = URI("https://overfast-api.tekrop.fr/players/#{username}/summary")
