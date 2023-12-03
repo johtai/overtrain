@@ -1,42 +1,18 @@
-<div class="space-between">
+<div class="wrapperwiki">
 
 
 
   <div id="heroesContainer">
-    <h1>Heroes</h1>
-  <% @heroes.take(5).each do | hero| %>
-
-        <div id="oneHeroContainer">
-          <p><%= image_tag("#{hero.portrait} ", id:"heroPortrait") %></p>
-
-          <p id="link"><%= link_to "#{hero.name}", "/wiki/heroes/#{hero.id}"  %></p>
-        </div>
-
-  <% end %>
+     <%= image_tag "heroes.jpg", class: "imageWiki", url: "/wiki/heroes" %>
   </div>
 
   <div id="mapsContainer">
-      <h1 style="text-align: center">Maps</h1>
-      <% @maps.take(5).each do |map| %>
-        <div id="oneMapContainer">
-          <%= image_tag("#{map.screenshot}", id:"mapImage") %>
-          <p><%= map.name %></p>
-          <p><%= map.location %></p>
-          <p><%= map.gamemodes[0] %></p>
-        </div>
-        <% end %>
-
+    <%= image_tag "maps.jpg", class: "imageWiki", url: "/wiki/maps"  %>
   </div>
 
-
-  <div id="gamemodesContainer">
-        <h1 style="text-align: center">Gamemodes</h1>
-      <% @gamemodes.take(5).each do |gamemode| %>
-          <div id="oneGamemodeContainer">
-            <%= image_tag("#{gamemode.screenshot}", id: "gamemodeImage") %>
-            <p><%= gamemode.name %></p>
-            <p><%= gamemode.desc %></p></div>
-      <% end %>
+  <div id="gamemodesContainer" >
+    <%= image_tag "gamemodes.jpg", class: "imageWiki", url: "/wiki/gamemodes" %>
   </div>
+
 
 </div>
