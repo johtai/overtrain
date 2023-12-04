@@ -1,13 +1,11 @@
 class WikiController < ApplicationController
   def index
-    @heroes = Hero.all
-    #@heroes_by_role = Hero.all.group_by(&:role)
-    @maps = Map.all
-    @gamemodes = Gamemode.all
 
   end
 
   def show_heroes
+    @heroes_by_role = Hero.all.group_by(&:role)
+    @heroes = Hero.all
   end
 
   def show_hero
@@ -21,6 +19,7 @@ class WikiController < ApplicationController
   end
 
   def show_maps
+    @maps_by_gamemode = Map.all.group_by{|map| map.gamemodes.first}
   end
 
   def show_map

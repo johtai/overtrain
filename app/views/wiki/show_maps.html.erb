@@ -1,2 +1,10 @@
-<h1>Wiki#show_maps</h1>
-<p>Find me in app/views/wiki/show_maps.html.erb</p>
+<div class="heroesMainContainer">
+  <% @maps_by_gamemode.each  do |gamemode, map| %>
+    <div>
+      <%= map %>
+
+
+      <br>
+    </div>
+  <% end %>
+</div>

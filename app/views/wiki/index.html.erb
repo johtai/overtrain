@@ -3,16 +3,19 @@
 
 
   <div id="heroesContainer">
-     <%= image_tag "heroes.jpg", class: "imageWiki", url: "/wiki/heroes" %>
+    <%= link_to   "/wiki/heroes"  do %>
+      <%= image_tag("heroes.jpg", class: "imageWiki") %>
+    <% end %>
   </div>
 
   <div id="mapsContainer">
-    <%= image_tag "maps.jpg", class: "imageWiki", url: "/wiki/maps"  %>
+    <%= link_to image_tag( "maps.jpg", class: "imageWiki") , "/wiki/maps"  %>
   </div>
 
   <div id="gamemodesContainer" >
-    <%= image_tag "gamemodes.jpg", class: "imageWiki", url: "/wiki/gamemodes" %>
+    <%= link_to image_tag( "gamemodes.jpg", class: "imageWiki"), "/wiki/gamemodes"%>
   </div>
+
 
 
 </div>
