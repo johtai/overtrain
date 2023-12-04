@@ -33,9 +33,11 @@ class HomeController < ApplicationController
     player_summary = params[:player_summary]
     player_stats = params[:player_stats]
     subs = Subscription.where(:user_id => user_id, :player_id => player_summary["username"])
+    if !subs.present?
+      Subscription.insert({ :user_id => user_id, :player_id => player_summary["username"] })
+    else
 
-    Subscription.insert({ :user_id => user_id, :player_id => player_summary["username"] })
-
+    end
 
     helpers.update_player_stats(player_summary, player_stats)
 
