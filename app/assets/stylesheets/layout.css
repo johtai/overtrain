@@ -8,7 +8,7 @@ body
 
 .navbar
 {
-    background-color: rgba(119, 19, 0, 0.71);
+    background-color: rgba(119, 19, 0, 1);
     /*background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);*/
     color: white;
     display: flex;
@@ -125,10 +125,7 @@ footer {
     min-height: 30px;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 25px;
-
-
-
+    font-size: 17px;
 }
 
 #content{
