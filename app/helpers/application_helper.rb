@@ -14,7 +14,11 @@ module ApplicationHelper
     JSON.parse(unparsed_response.body)
   end
   def get_hours (time)
-    time / 3600
+    if (time < 180000)
+      return (time / 3600.0).round(1)
+    else
+      return (time / 3600)
+    end
   end
   def get_username_summary(username)
     uri = URI("https://overfast-api.tekrop.fr/players/#{username}/summary")
@@ -61,6 +65,21 @@ module ApplicationHelper
                                location: attributes["location"], hitpoints: attributes["hitpoints"],
                                abilities: attributes["abilities"], story: attributes["story"])
       new_hero.save()
+    end
+  end
+  def update_player_stats(player_stats)
+    player = Player.where(:player_id => player_stats["player_id"])
+
+    if !player.present?
+      Player.create(:player_id => player_stats["player_id"], :dump_date => DateTime.now,
+                    :kda => player_stats['general']["kda"], :winrate => player_stats['general']["winrate"],
+                    :avg_elim => player_stats['general']['average']['eliminations'],
+                    :avg_ass => player_stats['general']['average']['assists'],
+                    :avg_dam => player_stats['general']['average']['damage'],
+                    :avg_death => player_stats['general']['average']['deaths'],
+                    :avg_heal => player_stats['general']['average']['healing'])
+    else
+      redirect_to error_path
     end
   end
 end
