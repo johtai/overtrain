@@ -5,14 +5,19 @@ Rails.application.routes.draw do
 
   post "/subscribe" => "home#subscribe"
 
-  # TODO
-  # get /user/:user_id
-  # get /user/:user_id/edit
-  # post /user/:user_id/edit
-  # patch /user/:user_id/edit
-  # get /user/:user_id/subscriptions
-  # delete /user/:user_id/subscriptions
-  # post /user/:used_id/subscriptions
+  get "/help" => "home#help"
+
+  get "/about" => "home#about"
+
+
+
+  get "/user/:user_id"
+  get "/user/:user_id/edit"
+  post "/user/:user_id/edit"
+  patch "/user/:user_id/edit"
+  get "/user/:user_id/subscriptions"
+  delete "/user/:user_id/subscriptions"
+  post "/user/:used_id/subscriptions"
 
   get "/wiki" => "wiki#index"
   get "/wiki/heroes" => "wiki#show_heroes"
