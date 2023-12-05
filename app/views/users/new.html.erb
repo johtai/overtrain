@@ -1,14 +1,14 @@
 <div class=" loginfield">
-  <h2 class = "title">Registration</h2>
+  <h2 class = "title">registration</h2>
   <div>
     <%= form_with model: @user do |form| %>
 
-      <p><%= form.text_field :user_id, placeholder:"nickname:", class: 'btn_edit_q' %></p>
+      <p><%= form.text_field :user_id, placeholder:"username", class: 'btn_edit_q' %></p>
 
-      <p><%= form.password_field :password, placeholder:"password:", class: 'btn_edit_q' %></p>
+      <p><%= form.password_field :password, placeholder:"password", class: 'btn_edit_q' %></p>
 
 
-      <p><%= form.submit 'Submit',  class: 'BtnQ' %></p>
+      <p><%= form.submit 'submit',  class: 'BtnQ' %></p>
 
     <% end %>
   </div>
