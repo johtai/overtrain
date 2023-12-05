@@ -9,7 +9,7 @@ class WikiController < ApplicationController
   end
 
   def show_hero
-    @hero = Hero.find(params[:id])
+    @hero = Hero.all.where(:hero_id => params[:hero_id])[0]
   end
 
   def show_gamemodes

@@ -14,12 +14,14 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30px;
+    min-height: 20px;
 }
 
 
 .login{
     order: 1;
+    font-family: "Overwatch Small";
+    font-size: 20px
 }
 
 .navbar a

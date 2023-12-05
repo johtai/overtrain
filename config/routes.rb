@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get "/wiki" => "wiki#index"
   get "/wiki/heroes" => "wiki#show_heroes"
-  get "/wiki/heroes/:id" => "wiki#show_hero"
+  get "/wiki/heroes/:hero_id" => "wiki#show_hero"
   get "/wiki/gamemodes" => "wiki#show_gamemodes"
   get "/wiki/gamemodes/:id" => "wiki#show_gamemode"
   get "/wiki/maps" => "wiki#show_maps"
