@@ -24,7 +24,7 @@ module ApplicationHelper
     uri = URI("https://overfast-api.tekrop.fr/players/#{username}/summary")
     unparsed_response = Net::HTTP.get_response(uri)
     result = JSON.parse(unparsed_response.body)
-    result["player_id"] = username
+    result["username"] = username
 
     result
   end
@@ -67,11 +67,11 @@ module ApplicationHelper
       new_hero.save()
     end
   end
-  def update_player_stats(player_stats)
-    player = Player.where(:player_id => player_stats["player_id"])
+  def update_player_stats(player_summary, player_stats)
+    player = Player.where(:player_id => player_summary["username"])
 
     if !player.present?
-      Player.create(:player_id => player_stats["player_id"], :dump_date => DateTime.now,
+      Player.create(:player_id => player_summary["username"], :dump_date => DateTime.now,
                     :kda => player_stats['general']["kda"], :winrate => player_stats['general']["winrate"],
                     :avg_elim => player_stats['general']['average']['eliminations'],
                     :avg_ass => player_stats['general']['average']['assists'],
@@ -79,7 +79,7 @@ module ApplicationHelper
                     :avg_death => player_stats['general']['average']['deaths'],
                     :avg_heal => player_stats['general']['average']['healing'])
     else
-      redirect_to error_path
+      #player.update()
     end
   end
 end

@@ -7,6 +7,6 @@
   <p>winrate: <%= @player_stats['general']['winrate'] %></p>
   <p>kda: <%= @player_stats['general']['kda'] %></p>
 
-  <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @player_stats } %>
-  <%= button_to "update_player_stats", "/update_player_stats", method: :post, params: { :player_stats => @player_stats } %>
+  <%= button_to "subscribe", "/subscribe", method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary } %>
+  <%= button_to "update_player_stats", "/update_player_stats", method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary } %>
 </div>
