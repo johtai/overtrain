@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get "/help" => "home#help"
   get "/about" => "home#about"
+  delete "/session/delete" => "sessions#destroy"
 
   '''get "/user/:user_id"
   get "/user/:user_id/edit"

@@ -24,7 +24,9 @@ a:hover
     color: white;
     font-size: 25px;
     font-weight: bold;
-    margin: 3px 0 0 0 ;
+    margin: 3px 0 0 0;
+    margin-right: auto;
+
 }
 #hPortrait
 {
@@ -60,7 +62,6 @@ a:hover
     font-size: 36px;
     text-align: center;
     background-color: white;
-
 }
 
 #abilTitle

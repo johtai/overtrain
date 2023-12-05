@@ -1,11 +1,9 @@
 class WikiController < ApplicationController
   def index
-
   end
 
   def show_heroes
     @heroes_by_role = Hero.all.group_by(&:role)
-
   end
 
   def show_hero

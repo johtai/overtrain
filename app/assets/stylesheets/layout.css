@@ -33,10 +33,11 @@ body
 
 .flash
 {
-margin: 8px 0px;
-padding: 5px;
-background: bisque;
-font-size: large;
+    margin: 0px;
+    padding: 0px;
+    background: bisque;
+    font-size: large;
+    color: #0E1119;
 }
 
 .logo

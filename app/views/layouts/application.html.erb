@@ -23,6 +23,7 @@
         <p class="login">
           <%if current_user.present?  %>
           <p><%= "@ #{current_user.user_id}"   %></p>
+
           <p><%=button_to 'log out', session_path, method: :delete, class: 'mr-sm' %> </p>
         <%else %>
           <b style="display: flex; flex-direction: column; margin-right: 8px">
@@ -42,7 +43,7 @@
     <%end %>
 
     <footer>
-      <a>ВСЕ ПРАВА ЗАЩИЩЕНЫ :)<br> © 1923 – 2023 «OVERTRAIN» </a>
+      <a>ALL RIGHT RESERVED :)<br> © 1923 – 2023 «OVERTRAIN» </a>
     </footer>
 
   </div>
