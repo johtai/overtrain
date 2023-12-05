@@ -43,4 +43,12 @@ class HomeController < ApplicationController
 
     #redirect_to "/username:#{player_stats["player_id"]}"
   end
+
+  def help
+    redirect_to "/"
+  end
+
+  def about
+    redirect_to "/"
+  end
 end
