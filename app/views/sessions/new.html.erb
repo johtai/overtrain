@@ -1,16 +1,10 @@
 <div class = "loginfield">
     <h2 class = "title">sign in</h2>
-
     <div>
       <%= form_with scope: :session, url:session_path, data: {turbo: false } do |form| %>
         <p><%= form.text_field :user_id, placeholder: "username", class: 'btn_edit_q' %></p>
-
         <p><%= form.password_field :password, placeholder:"password",  class: 'btn_edit_q' %></p>
-
         <p styleclass="mt-lg"><%= form.submit 'sign in', class: 'BtnQ ' %></p>
-
       <% end %>
-
     </div>
-
 </div>
