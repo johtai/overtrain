@@ -5,7 +5,7 @@ class WikiController < ApplicationController
 
   def show_heroes
     @heroes_by_role = Hero.all.group_by(&:role)
-    @heroes = Hero.all
+
   end
 
   def show_hero
@@ -13,9 +13,11 @@ class WikiController < ApplicationController
   end
 
   def show_gamemodes
+    @gamemodes = Gamemode.all
   end
 
   def show_gamemode
+
   end
 
   def show_maps

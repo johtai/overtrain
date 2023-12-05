@@ -57,3 +57,6 @@ diff a/app/views/wiki/index.html.erb b/app/views/wiki/index.html.erb	(rejected h
       </div>
   <% end %>
 </div>
+
+
+

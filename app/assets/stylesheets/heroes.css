@@ -1,7 +1,7 @@
 .heroesMainContainer
 {
     display: flex;
-   align-content: center;
+    align-content: center;
     justify-content: center;
     margin-top: 5px;
     margin-left: auto;
@@ -20,16 +20,14 @@
 
 }
 
-#link a:hover
-{
-    color: wheat;
-}
+
 
 #heroContainer
 {
     margin: 2px;
 
 }
+
 
 .center h2
 {
@@ -43,7 +41,6 @@
     width: 25%;
     height: auto;
     background-color: rgba(30, 49, 68, 0.65);
-
     backdrop-filter: blur(2px);
     margin-left: 10px;
 }
@@ -59,8 +56,8 @@
 
 #heroPortrait
 {
-    width: 75px;
-    height: 75px;
+    max-width: 85px;
+    max-height: 85px;
     border-radius: 9px;
     border: 2px solid rgba(255, 255, 255, 0.64);
 }
@@ -68,7 +65,7 @@
 #heroTitle
 {
     display: flex;
-    background-color: #185875;
+    #background-color: rgba(55, 98, 126, 0.65);
 }
 #role
 {
@@ -79,13 +76,27 @@
     border-radius: 10% / 50%;;
 }
 
+
+
+
+#link
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Overwatch Small";
+    letter-spacing: 1.5px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
 #link a
 {
     text-decoration: none;
     color: white;
 }
 
-#link
+#link a:hover
 {
- text-align: center;
+    color: wheat;
 }
