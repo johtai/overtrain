@@ -31,20 +31,15 @@
           </b>
         <%end %>
         </p>
-
-
-
-        <% if flash[:notice].present? %>
-          <p class="flash"><%= flash[:notice]  %></p>
-        <% elsif  flash[:alert].present?%>
-          <p class="flash"><%= flash[:alert] %></p>
-        <%end %>
-
-
       </div>
       <%= yield %>
-
     </div>
+
+    <% if flash[:notice].present? %>
+      <p class="flash"><%= flash[:notice]  %></p>
+    <% elsif  flash[:alert].present?%>
+      <p class="flash"><%= flash[:alert] %></p>
+    <%end %>
 
     <footer>
       <a>ВСЕ ПРАВА ЗАЩИЩЕНЫ :)<br> © 1923 – 2023 «OVERTRAIN» </a>
