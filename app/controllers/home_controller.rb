@@ -30,15 +30,16 @@ class HomeController < ApplicationController
   # subscribe to a specific player's stats and create a records in Player and Subscription
   def subscribe
     user_id = session[:user_id]
+    player_summary = params[:player_summary]
     player_stats = params[:player_stats]
+    subs = Subscription.where(:user_id => user_id, :player_id => player_summary["username"])
+    if !subs.present?
+      Subscription.insert({ :user_id => user_id, :player_id => player_summary["username"] })
+    else
 
-    subs = Subscription.where(:user_id => user_id, :player_id => player_stats["player_id"])
+    end
 
-
-    Subscription.create({ :user_id => user_id, :player_id => player_stats["player_id"] })
-
-
-    helpers.update_player_stats(player_stats)
+    helpers.update_player_stats(player_summary, player_stats)
 
     #redirect_to "/username:#{player_stats["player_id"]}"
   end
