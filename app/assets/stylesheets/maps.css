@@ -19,7 +19,6 @@
     display: block;
     justify-content: center;
     border-radius: 5px;
-
 }
 
 .mapContainer
@@ -72,5 +71,7 @@
 {
     text-decoration:none;
     color: white;
-    font-size: larger;
+    font-size: 23px;
+    font-family: "Overwatch Small";
+    font-weight: lighter;
 }
