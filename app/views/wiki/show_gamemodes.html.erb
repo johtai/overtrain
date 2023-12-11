@@ -1,8 +1,8 @@
 <div class="gamemodesMainContainer">
   <% @gamemodes.each do |gamemode| %>
     <div class="gamemodeContainer">
-      <%= image_tag "#{gamemode.screenshot}", class: "gamemodesImage" %>
-      <p style="margin: 2px 0 0 0 "><%= link_to "#{gamemode.name}" , "/wiki/gamemodes/#{gamemode.id}", class: "gamemodesLink"  %></p>
+      <%= image_tag "#{gamemode.screenshot}", class: "gamemodesImage", preload:true %>
+      <p style="margin: 2px 0 0 0 "><%= link_to "#{gamemode.name}" , "/wiki/gamemodes/#{gamemode.id}", class: "gamemodesLink" %></p>
     </div>
   <% end %>
 </div>
