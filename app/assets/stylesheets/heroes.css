@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
     text-align: center;
-
+    padding-left: 10px;
 
 }
 
@@ -56,8 +56,8 @@
 
 #heroPortrait
 {
-    max-width: 85px;
-    max-height: 85px;
+    max-width: 95px;
+    max-height: 95px;
     border-radius: 9px;
     border: 2px solid rgba(255, 255, 255, 0.64);
 }

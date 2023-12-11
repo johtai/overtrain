@@ -16,13 +16,3 @@
     <% end %>
   </tbody>
 </table>
-
-
-<p>Information</p>
-<% @all_usernames["results"].each do |res| %>
-  <div class="uInfo">
-  <a> Player id: <%=  link_to "#{res["player_id"]}", "/username/#{res["player_id"]}" %></a>
-  <p class="fcolor">name: <%= res["name"] %></p>
-  <p class="scolor">url: <%= res['career_url'] %></p>
-  </div>
-<%end%>

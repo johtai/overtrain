@@ -9,14 +9,6 @@ Rails.application.routes.draw do
   get "/about" => "home#about"
   delete "/session/delete" => "sessions#destroy"
 
-  '''get "/user/:user_id"
-  get "/user/:user_id/edit"
-  post "/user/:user_id/edit"
-  patch "/user/:user_id/edit"
-  get "/user/:user_id/subscriptions"
-  delete "/user/:user_id/subscriptions"
-  post "/user/:used_id/subscriptions"'''
-
   get "/wiki" => "wiki#index"
   get "/wiki/heroes" => "wiki#show_heroes"
   get "/wiki/heroes/:hero_id" => "wiki#show_hero"
@@ -24,6 +16,14 @@ Rails.application.routes.draw do
   get "/wiki/gamemodes/:id" => "wiki#show_gamemode"
   get "/wiki/maps" => "wiki#show_maps"
   get "/wiki/maps/:id" => "wiki#show_map"
+
+  '''get "/user/:user_id"
+  get "/user/:user_id/edit"
+  post "/user/:user_id/edit"
+  patch "/user/:user_id/edit"
+  get "/user/:user_id/subscriptions"
+  delete "/user/:user_id/subscriptions"
+  post "/user/:used_id/subscriptions"'''
 
   root "home#index"
 
