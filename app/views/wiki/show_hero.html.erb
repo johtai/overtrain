@@ -1,0 +1,27 @@
+<%hero = @hero%>
+
+  <div id="mainHeroTitle">
+    <p><%=image_tag("#{hero.portrait}", id: "hPortrait") %></p>
+
+    <p><%= hero.name %></p>
+    <p><%= hero.role %></p>
+
+  </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="abl">Abilities</div>
+
+<div id="abilities">
+  <% @hero.abilities.each do |ability| %>
+    <div id="abilContent">
+      <div id="abilTitle">
+        <%= image_tag("#{ability["icon"]}", id: "abilImage") %>
+        <p><%= ability["name"] %></p>
+
+      </div>
+      <p><%= ability["description"] %></p>
+    </div>
+  <%end %>
+
+</div>

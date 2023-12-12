@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
   def create
     user_params = params.require(:session)
 
-    user = User.find_by(nickname: user_params[:nickname])&.authenticate(user_params[:password])
+    user = User.find_by(user_id: user_params[:user_id])&.authenticate(user_params[:password])
 
     if user.present?
-      session[:user_id] = user.id
+      session[:user_id] = user.user_id
       redirect_to '/', notice:  'Вы вошли на сайт!'
 
     else

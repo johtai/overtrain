@@ -1,0 +1,102 @@
+a.heroesMainContainer
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.heroClass
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: center;
+    padding-left: 10px;
+
+}
+
+
+
+#heroContainer
+{
+    margin: 2px;
+
+}
+
+
+.center h2
+{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.center
+{
+    width: 25%;
+    height: auto;
+    background-color: rgba(30, 49, 68, 0.65);
+    backdrop-filter: blur(2px);
+    margin-left: 10px;
+}
+
+
+
+#role
+{
+    max-width: 100px;
+}
+
+
+
+#heroPortrait
+{
+    max-width: 95px;
+    max-height: 95px;
+    border-radius: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.64);
+}
+
+#heroTitle
+{
+    display: flex;
+    #background-color: rgba(55, 98, 126, 0.65);
+}
+#role
+{
+    background-color: #e7b727;
+    text-align: center;
+    font-family: "Overwatch Small";
+    letter-spacing: 2px;
+    border-radius: 10% / 50%;;
+}
+
+
+
+
+#link
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Overwatch Small";
+    letter-spacing: 1.5px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+#link a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#link a:hover
+{
+    color: wheat;
+}

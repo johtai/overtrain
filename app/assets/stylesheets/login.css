@@ -2,16 +2,14 @@
     display: block;
     justify-content: center;
     align-items: center;
-    /*margin-left: 50em;*/
     margin-left: auto;
     margin-right: auto;
     width: 350px;
     height: 300px;
     background-color: #1f2739;
     border-radius: 3px;
-    box-shadow: 3px 3px 3px #a29539;
-
-
+    font-family: "Overwatch Small";
+    font-size: 25px;
 }
 
 .loginfield .btn_edit_q{

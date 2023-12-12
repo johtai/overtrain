@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hero_id: MyString
+  name: MyString
+  desc: MyString
+  portrait: MyString
+  role: MyString
+  location: MyString
+  hitpoints: 
+  abilities: 
+  story: 
+
+two:
+  hero_id: MyString
+  name: MyString
+  desc: MyString
+  portrait: MyString
+  role: MyString
+  location: MyString
+  hitpoints: 
+  abilities: 
+  story: 

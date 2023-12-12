@@ -1,0 +1,16 @@
+<div class="mapsMainContainer">
+  <% @maps_by_gamemode.each  do |gamemode, map| %>
+
+    <div class="mapContainer" >
+      <p id="mapHeader" ><%= gamemode %></p>
+            <% map.each do |oneMap|  %>
+        <div class="oneMapContainer">
+            <%= image_tag "#{oneMap["screenshot"]}", id: "mapImage", preload:true %>
+            <p style="margin-top: 0"><%= link_to "#{oneMap['name']}", "/wiki/maps/#{oneMap["id"]}", class: "mapLink" %></p>
+        </div>
+
+        <% end %>
+    </div>
+  <% end %>
+
+</div>

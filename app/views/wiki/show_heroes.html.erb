@@ -1,0 +1,21 @@
+
+
+<div class="heroesMainContainer">
+  <% @heroes_by_role.each do |role, heroes| %>
+    <div class="center">
+      <h2 id = "role"><%= role %></h2>
+    <div class="heroClass">
+    <% heroes.each do |hero| %>
+    <div id="heroContainer">
+      <div id="heroTitle">
+        <div id="oneHeroContainer">
+          <p style="margin: 3px 3px 0 3px"><%= image_tag("#{hero.portrait} ", id:"heroPortrait", preload: true ) %></p>
+          <p id="link"><%= link_to "#{hero.name}", "/wiki/heroes/#{hero.hero_id}"  %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    </div>
+    </div>
+  <% end %>
+</div>

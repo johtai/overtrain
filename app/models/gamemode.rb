@@ -1,0 +1,2 @@
+class Gamemode < ApplicationRecord
+end

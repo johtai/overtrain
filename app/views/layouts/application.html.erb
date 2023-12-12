@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Overtrain</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<head>
+  <title>Overtrain</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-  <body>
-  <div id="secondbackgr">
+<body>
+<div id="secondbackgr">
   <div id="content">
-  <div class="wrapper">
-  <div class="navbar">
+    <div class="wrapper">
+      <div class="navbar">
 
-    <p class="logo"><%= link_to "overtrain", root_path %></p>
-    <div class="login">
-       <%if current_user.present?  %>
-        <p><%= "@ #{current_user.nickname}"   %></p>
-        <p><%=button_to 'Log Out', session_path, method: :delete, class: 'mr-sm' %> </p>
-       <%else %>
-       <%= link_to 'Sign Up', new_user_path %>
-        <%= link_to 'Sign In', new_session_path %>
-       <%end %>
+        <p class="logo"><%= link_to "overtrain", root_path %></p>
+        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "game wiki", "/wiki"%></p>
+        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "about us", "/wiki"%></p>
+        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "help", "/wiki"%></p>
+        <p class="login">
+          <%if current_user.present?  %>
+          <div style="display: flex; justify-items: center; justify-content: center;">
+            <%= link_to "@ #{current_user.user_id}", "/users/#{current_user.user_id}", style: "margin-right:20px" %>
+            <%=button_to 'log out', session_path, method: :delete, class: 'mr-sm' %>
+          </div>
+        <%else %>
+          <b style="display: flex; flex-direction: column; margin-right: 8px">
+            <%= link_to 'sign up', new_user_path %>
+            <%= link_to 'sign in', new_session_path %>
+          </b>
+        <%end %>
+        </p>
+      </div>
+      <%= yield %>
     </div>
 
-
-
-
-
-
-  </div>
     <% if flash[:notice].present? %>
       <p class="flash"><%= flash[:notice]  %></p>
     <% elsif  flash[:alert].present?%>
       <p class="flash"><%= flash[:alert] %></p>
     <%end %>
 
-    <%= yield %>
+    <footer>
+      <a>ALL RIGHT RESERVED :)<br> © 1923 – 2023 «OVERTRAIN» </a>
+    </footer>
 
   </div>
-
-  <footer>
-
-    <a>footer</a>
-    <a>Contact us</a>
-    <a>FAQ</a>
-
-
-
-
-  </footer>
-  </div>
-  </div>
-  </body>
+</div>
+</body>
 </html>
