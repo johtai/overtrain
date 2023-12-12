@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :users, only: %i[new create]
+  get "users/:user_id" => "users#show"
   resource :session, only: %i[new create destroy]
 
 end

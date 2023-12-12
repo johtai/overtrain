@@ -22,9 +22,10 @@
         <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "help", "/wiki"%></p>
         <p class="login">
           <%if current_user.present?  %>
-          <p><%= "@ #{current_user.user_id}"   %></p>
-
-          <p><%=button_to 'log out', session_path, method: :delete, class: 'mr-sm' %> </p>
+          <div style="display: flex; justify-items: center; justify-content: center;">
+            <%= link_to "@ #{current_user.user_id}", "/users/#{current_user.user_id}", style: "margin-right:20px" %>
+            <%=button_to 'log out', session_path, method: :delete, class: 'mr-sm' %>
+          </div>
         <%else %>
           <b style="display: flex; flex-direction: column; margin-right: 8px">
             <%= link_to 'sign up', new_user_path %>

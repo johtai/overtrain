@@ -8,4 +8,9 @@ class UsersController < ApplicationController
 
     redirect_to '/', notice:'Вы успешно зарегистрировались! '
   end
+
+
+  def show
+    @subscriptions = Subscription.where(:user_id => current_user.user_id)
+  end
 end
