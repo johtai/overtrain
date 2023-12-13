@@ -17,15 +17,13 @@ body{
 
 }
 
-
-.tablehero th h1{
+.tablehero th h1
+{
     font-weight: bold;
     /*font-size: 2em;*/
     text-align: left;
     color: #185875;
 }
-
-
 
 
 .tablehero a
@@ -40,7 +38,6 @@ body{
 }
 
 
-
 .tablehero th, .tablehero td
 {
     background-color: #1f2739;
@@ -50,19 +47,10 @@ body{
 }
 
 
-.tablehero td{
+.tablehero td
+{
     color: #ffffff;
     font-weight: normal;
     font-size: 1em;
     box-shadow: 0 2px 2px -2px #0E1119;
-}
-
-/* Background-color of the odd rows */
-.tablehero tr:nth-child(odd) {
-    background-color: #323C50;
-}
-
-/* Background-color of the even rows */
-.tablehero tr:nth-child(even) {
-    background-color: #2C3446;
 }

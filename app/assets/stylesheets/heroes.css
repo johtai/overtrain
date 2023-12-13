@@ -1,4 +1,4 @@
-a.heroesMainContainer
+.heroesMainContainer
 {
     display: flex;
     align-content: center;
@@ -19,8 +19,6 @@ a.heroesMainContainer
     padding-left: 10px;
 
 }
-
-
 
 #heroContainer
 {
@@ -46,12 +44,10 @@ a.heroesMainContainer
 }
 
 
-
 #role
 {
     max-width: 100px;
 }
-
 
 
 #heroPortrait
@@ -71,12 +67,10 @@ a.heroesMainContainer
 {
     background-color: #e7b727;
     text-align: center;
-    font-family: "Overwatch Small";
+    font-family: "Overwatch Small", "serif";
     letter-spacing: 2px;
     border-radius: 10% / 50%;;
 }
-
-
 
 
 #link
@@ -84,7 +78,7 @@ a.heroesMainContainer
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: "Overwatch Small";
+    font-family: "Overwatch Small", "serif";
     letter-spacing: 1.5px;
     font-size: x-large;
     font-weight: lighter;

@@ -8,18 +8,20 @@
     height: 300px;
     background-color: #1f2739;
     border-radius: 3px;
-    font-family: "Overwatch Small";
+    font-family: "Overwatch Small", "serif";
     font-size: 25px;
 }
 
-.loginfield .btn_edit_q{
+.loginfield .btn_edit_q
+{
     background-color: #323C50;
-    border-radius: 0px;
+    border-radius: 0;
     width: 17em;
     height: 2em;
 }
 
-.loginfield h2, p{
+.loginfield h2, p
+{
     text-align: center;
     font-weight: bold;
     color: #e8e8e8;
@@ -27,10 +29,11 @@
 }
 
 
-.loginfield .BtnQ{
+.loginfield .BtnQ
+{
     background-color: #e7910a;
     box-shadow: #185875;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
     font-weight: bold;
     width: 11em;
     height: 3em;

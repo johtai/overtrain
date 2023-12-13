@@ -7,8 +7,6 @@
 
 }
 
-
-
 .oneMapContainer
 {
     background-color: rgba(154, 174, 213, 0.6);
@@ -36,7 +34,7 @@
 {
     background-color: #e7b727;
     color: black;
-    font-family: "Overwatch Small";
+    font-family: "Overwatch Small", serif;
     font-size: larger;
     height: 35px;
     max-width: 150px;
@@ -72,6 +70,6 @@
     text-decoration:none;
     color: white;
     font-size: 23px;
-    font-family: "Overwatch Small";
+    font-family: "Overwatch Small", serif;
     font-weight: lighter;
 }

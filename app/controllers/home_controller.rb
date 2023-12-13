@@ -22,7 +22,7 @@ class HomeController < ApplicationController
   def show
     username_response = helpers.get_username_stats(params[:username])
     redirect_to error_path if username_response['error'] == 'Player not found'
-
+    redirect_to "/", notice: 'Нет информации об этом игроке' if username_response.blank?
     @player_summary = helpers.get_username_summary(params[:username])
     @player_stats = username_response
   end

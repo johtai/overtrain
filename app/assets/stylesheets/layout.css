@@ -3,7 +3,7 @@ body
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0px;
+    margin: 0;
 }
 
 .navbar
@@ -17,26 +17,27 @@ body
     min-height: 20px;
 }
 
-
-.login{
-    order: 1;
-    font-family: "Overwatch Small";
-    font-size: 20px
-}
-
 .navbar a
 {
     color: white;
     text-decoration: none;
-    font-family: "Overwatch Large";
+    font-family: "Overwatch Large", "serif";
 }
+
+
+.login{
+    order: 1;
+    font-family: "Overwatch Small", "serif";
+    font-size: 20px
+}
+
 
 .flash
 {
     margin: 0px;
     padding: 0px;
-    background: bisque;
-    font-size: large;
+    background: rgba(255, 228, 196, 0.66);
+    font-size: x-large;
     color: #0E1119;
 }
 
@@ -61,11 +62,31 @@ a:hover
 {
     color: wheat;
 }
+
 .btn{
-    font-family: "Bebas Neue Bold";
+    font-family: "Bebas Neue Bold", "serif";
     font-size: 15px;
     background-color: coral;
     border-radius: 3px;
+}
+
+.simple_button
+{
+    color: white;
+    font-family: "Overwatch Small", "serif";
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    border: rgba(14, 17, 25, 0) solid ;
+    background: #761300;
+    min-width: 90px;
+    min-height: 30px;
+}
+
+.simple_button:hover
+{
+    color: wheat;
+
 }
 
 .search{
@@ -78,10 +99,11 @@ a:hover
 {
 margin: 5px;
 }
+
 .search label
 {
     font-size: larger;
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", serif;
     font-weight: bold;
 }
 
@@ -93,7 +115,7 @@ margin: 5px;
     min-width: 50px;
     padding: 2px;
     background: rgba(255, 255, 255, 0.78);
-    font-family: "Trebuchet MS";
+    font-family: "Trebuchet MS", "serif";
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
@@ -103,8 +125,8 @@ margin: 5px;
 {
     background: rgba(255, 98, 38, 0.71);
     border-radius: 8px;
+    cursor: grab;
 }
-
 
 
 .wrapper
@@ -118,7 +140,8 @@ margin: 5px;
 }
 
 
-footer {
+footer
+{
     background-color: rgba(220, 219, 219, 1); /* Цвет фона вашего футера */
     color: rgba(117, 117, 40, 0.94); /* Цвет текста вашего футера */
     padding: 20px;
@@ -129,12 +152,14 @@ footer {
     font-size: 17px;
 }
 
-#content{
+#content
+{
     #margin: 10px;
     /*padding: 0px 50px 0px 50px;*/
 }
 
-#secondbackgr{
+#secondbackgr
+{
     background-image: url(background-2.jpeg);
     background-size: 100% auto;
     '''background-color: rgba(0, 0, 0, 0.63);
