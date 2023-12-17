@@ -45,10 +45,10 @@ class HomeController < ApplicationController
   end
 
   def help
-    redirect_to "/"
+
   end
 
   def about
-    redirect_to "/"
+
   end
 end

@@ -12,5 +12,6 @@ class UsersController < ApplicationController
 
   def show
     @subscriptions = Subscription.where(:user_id => current_user.user_id)
+
   end
 end

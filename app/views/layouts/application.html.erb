@@ -18,13 +18,13 @@
 
         <p class="logo"><%= link_to "overtrain", root_path %></p>
         <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "game wiki", "/wiki"%></p>
-        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "about us", "/wiki"%></p>
-        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "help", "/wiki"%></p>
+        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "about us", "/about"%></p>
+        <p style="font-size: 35px; margin-bottom: 5px; margin-top: 0px"><%=link_to "help", "/help"%></p>
         <p class="login">
 
           <%if current_user.present?  %>
-          <div style="display: flex; justify-items: center; justify-content: center;">
-            <%= link_to "@ #{current_user.user_id}", "/users/#{current_user.user_id}", style: "margin-right:20px; font-size:larger" %>
+          <div style="display: flex; justify-items: center; justify-content: center;  ">
+            <%= link_to "@ #{current_user.user_id}", "/users/#{current_user.user_id}", style: "margin-right:20px; text-align: center;  font-size:larger" %>
             <%=button_to 'log out', session_path, method: :delete, class: 'simple_button' %>
           </div>
 

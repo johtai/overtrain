@@ -1,0 +1,21 @@
+#sub_container
+{
+    background-color: rgba(50, 60, 80, 0.48);
+    margin-bottom: 10px;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    max-width: 200px;
+}
+
+#main_sub_info
+{
+
+}
+#sub_image
+{
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}

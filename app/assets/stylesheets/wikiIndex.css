@@ -5,6 +5,7 @@
     margin-left: 10px;
     justify-content: space-between;
 
+
 }
 
 .wrapperwiki div
@@ -14,12 +15,14 @@
     width: 30%;
     height: 400px;
     margin-left: 20px;
+
 }
 
 .wrapperwiki a
 {
     position: relative;
     display: inline-block;
+
 }
 
 
@@ -27,6 +30,8 @@
 {
     max-width: 100%;
     height: 400px;
+    #box-shadow: 10px 16px rgba(255, 166, 52, 0.65);
+
 
 }
 

@@ -1,9 +1,15 @@
 
 
-
 <div id="subscriptions_container">
-  <h1>Subscriptions</h1>
+  <h1 style="font-family: 'Overwatch Small'; letter-spacing: 2px; margin-left: 8px ">Subscriptions</h1>
 <% @subscriptions.each do |sub|%>
-  <%= sub["player_id"] %>
-<%end %>
+  <% player = get_username_summary(sub["player_id"]) %>
+      <div id= "sub_container">
+        <div id="main_sub_info">
+          <p><%= image_tag "#{player["avatar"]}", id: "sub_image" %>
+          <p style="font-family: 'Overwatch Small'; font-size: x-large; letter-spacing: 2px;"><%= player["username"] %></p>
+        </div>
+        <p><%= player["title"] %></p>
+      </div>
+    <%end%>
 </div>
