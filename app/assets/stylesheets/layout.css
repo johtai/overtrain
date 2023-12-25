@@ -92,6 +92,8 @@ a:hover
 .search{
     display: flex;
     justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -124,10 +126,19 @@ margin: 5px;
 .search button
 {
     background: rgba(255, 98, 38, 0.71);
-    border-radius: 8px;
-    cursor: grab;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(148, 41, 41, 0.3);
 }
 
+.search button:hover
+{
+    background: rgba(255, 72, 0, 0.84);
+    width: 35px;
+    height: 35px;
+}
 
 .wrapper
 {
