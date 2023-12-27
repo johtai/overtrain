@@ -1,8 +1,8 @@
 <div class="gamemodesMainContainer">
   <% @gamemodes.each do |gamemode| %>
     <div class="gamemodeContainer">
-      <%= image_tag "#{gamemode.screenshot}", class: "gamemodesImage", preload:true %>
-      <p style="margin: 2px 0 0 0 "><%= link_to "#{gamemode.name}" , "/wiki/gamemodes/#{gamemode.id}", class: "gamemodesLink" %></p>
+      <div class=" gamemode_photo" data-tittle="<%= gamemode.desc %>"><%= image_tag "#{gamemode.screenshot}", class: "gamemodesImage" %></div>
+      <p style="margin: 2px 0 0 0; font-size: x-large; font-family: Overwatch Small; letter-spacing: 3px; color: rgba(255,255,255,0.85) "><%= gamemode.name%></p>
     </div>
   <% end %>
 </div>

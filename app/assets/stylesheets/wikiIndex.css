@@ -45,3 +45,14 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
     border: thick double #32a1ce;
 }
+
+.center_text_wiki
+{
+    position: relative;
+    text-align: center;
+    font-family: "Overwatch Small";
+    letter-spacing: 3px;
+    font-size: xx-large;
+    color: white;
+
+}

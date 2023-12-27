@@ -32,3 +32,14 @@
     text-decoration: none;
     color: white;
 }
+
+.sub_info p a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.sub_info p a:hover
+{
+    color: wheat;
+}

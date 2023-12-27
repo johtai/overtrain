@@ -1,0 +1,47 @@
+.gamemode_photo::after
+{
+    content: attr(data-title);
+}
+
+.gamemode_photo:hover::after
+{
+    content: attr(data-tittle);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.89);
+    padding: 5px 10px;
+    pointer-events: none;
+}
+
+
+.gamemode_photo:hover::before {
+    opacity: 1;
+}
+
+.gamemode_photo
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.gamemodesImage:hover
+{
+    filter: brightness(50%);
+    opacity: 1;
+}
+
+.gamemode_photo img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+

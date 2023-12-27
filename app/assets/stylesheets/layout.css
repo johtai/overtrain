@@ -9,7 +9,6 @@ body
 .navbar
 {
     background-color: rgba(119, 19, 0, 1);
-    /*background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);*/
     color: white;
     display: flex;
     justify-content: space-between;
@@ -140,6 +139,13 @@ margin: 5px;
     height: 35px;
 }
 
+.link_and_button_user_container
+{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
 .wrapper
 {
     flex: 1;
@@ -172,7 +178,69 @@ footer
 #secondbackgr
 {
     background-image: url(background-2.jpeg);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     '''background-color: rgba(0, 0, 0, 0.63);
     min-height: auto;
+}
+
+#welcome_text
+{
+    font-family: "Overwatch Small";
+    letter-spacing: 3px;
+    font-size: xxx-large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header_text
+{
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+@media (max-width: 1000px ) {
+
+    .header_text
+    {
+        font-size: large;
+    }
+
+    .logo
+    {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .simple_button
+    {
+        padding: 1px 0 1px 0;
+    }
+    #welcome_text
+    {
+        font-size: x-large;
+    }
+
+
+}
+
+@media (max-width: 700px)
+{
+    #username
+    {
+        max-width:200px ;
+    }
+
+    .navbar div a
+    {
+        font-size: small;
+    }
+    .link_and_button_user_container a
+    {
+        font-size: small;
+    }
 }
