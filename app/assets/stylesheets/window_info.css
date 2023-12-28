@@ -1,6 +1,7 @@
 .gamemode_photo::after
 {
     content: attr(data-title);
+    font-family: "Overwatch Small", "serif";
 }
 
 .gamemode_photo:hover::after
@@ -12,20 +13,21 @@
     transform: translate(-50%, -50%);
     z-index:1;
     font-family: arial, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.89);
-    padding: 5px 10px;
     pointer-events: none;
+    font-family: "Overwatch Small", "serif";
 }
 
 
 .gamemode_photo:hover::before {
     opacity: 1;
+    font-family: "Overwatch Small", "serif";
 }
 
 .gamemode_photo
 {
+    font-family: "Overwatch Small", "serif";
     position: relative;
     overflow: hidden;
 }
@@ -42,6 +44,7 @@
     width: 100%;
     height: auto;
     transition: filter 0.3s ease;
+    font-family: "Overwatch Small", "serif";
 }
 
 
