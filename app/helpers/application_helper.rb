@@ -70,16 +70,12 @@ module ApplicationHelper
   def update_player_stats(player_summary, player_stats)
     player = Player.where(:player_id => player_summary["username"])
 
-    if !player.present?
-      Player.create(:player_id => player_summary["username"], :dump_date => DateTime.now,
+    Player.insert({:player_id => player_summary["username"], :dump_date => DateTime.now,
                     :kda => player_stats['general']["kda"], :winrate => player_stats['general']["winrate"],
                     :avg_elim => player_stats['general']['average']['eliminations'],
                     :avg_ass => player_stats['general']['average']['assists'],
                     :avg_dam => player_stats['general']['average']['damage'],
                     :avg_death => player_stats['general']['average']['deaths'],
-                    :avg_heal => player_stats['general']['average']['healing'])
-    else
-      #player.update()
-    end
+                    :avg_heal => player_stats['general']['average']['healing']})
   end
 end

@@ -22,9 +22,11 @@ class HomeController < ApplicationController
   def show
     username_response = helpers.get_username_stats(params[:username])
     redirect_to error_path if username_response['error'] == 'Player not found'
-    redirect_to "/", notice: 'Нет информации об этом игроке' if username_response.blank?
+    redirect_to "/", notice: 'No data about the user' if username_response.blank?
     @player_summary = helpers.get_username_summary(params[:username])
     @player_stats = username_response
+
+    helpers.update_player_stats(@player_summary, @player_stats)
   end
 
   # subscribe to a specific player's stats and create a records in Player and Subscription
@@ -41,7 +43,7 @@ class HomeController < ApplicationController
 
     helpers.update_player_stats(player_summary, player_stats)
 
-    #redirect_to "/username:#{player_stats["player_id"]}"
+    redirect_to "/username/#{player_stats["player_id"]}"
   end
 
   def help
