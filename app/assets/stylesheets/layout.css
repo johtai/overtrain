@@ -14,6 +14,7 @@ body
     justify-content: space-between;
     align-items: center;
     min-height: 20px;
+    filter: drop-shadow(6px 6px 7px #761300) ;
 }
 
 .navbar a
@@ -50,6 +51,7 @@ body
     padding-left: 25px;
     padding-right: 25px;
     margin: 5px;
+    text-shadow: 3px 4px 5px #000;
 
 }
 
@@ -80,6 +82,7 @@ a:hover
     background: #761300;
     min-width: 90px;
     min-height: 30px;
+    text-shadow: 3px 4px 5px #000;
 }
 
 .simple_button:hover
@@ -92,6 +95,7 @@ a:hover
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 
 
 }
@@ -144,6 +148,7 @@ margin: 5px;
     display: flex;
     justify-items: center;
     justify-content: center;
+    text-shadow: 3px 4px 5px #000;
 }
 
 .wrapper
@@ -199,6 +204,7 @@ footer
     font-size: 35px;
     margin-bottom: 5px;
     margin-top: 0;
+    text-shadow: 3px 4px 5px #000;
 }
 
 @media (max-width: 1000px ) {
@@ -214,6 +220,7 @@ footer
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
+
     }
 
     .simple_button

@@ -2,8 +2,7 @@
 {
     display: flex;
     justify-content: flex-start;
-
-
+    background-color: #323C50;
 }
 
 #sub_container
@@ -11,14 +10,23 @@
     background-color: rgba(50, 60, 80, 0.48);
     margin-bottom: 10px;
     margin-right: 10px;
-    #justify-content: left;
-    #justify-items: left;
-    #text-align: left;
-    #flex-direction: column;
     display: flex;
-    #max-width: 200px;
+    border-right: 5px solid white;
+    padding-right: 15px;
 }
 
+.sub_title
+{
+    background-color: #323C50;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-family: "Overwatch Small";
+    letter-spacing: 2px;
+    text-shadow: 3px 4px 5px #000;
+}
 
 #sub_image
 {
@@ -37,6 +45,7 @@
 {
     text-decoration: none;
     color: white;
+    text-shadow: 3px 4px 5px #000;
 }
 
 .sub_info p a:hover
