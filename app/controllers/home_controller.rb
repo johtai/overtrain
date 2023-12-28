@@ -1,6 +1,9 @@
 require 'net/http'
 class HomeController < ApplicationController
   def index
+    @random_hero = Hero.find(Random.rand(1...38))
+    @random_map = Map.find(Random.rand(1...41))
+    @random_gamemode = Gamemode.find(Random.rand(1...10))
   end
 
   def error
