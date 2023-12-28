@@ -1,6 +1,4 @@
 <div id="general_info_player_container">
-
-
   <%= image_tag "#{@player_summary['avatar']}", id: "player_avatar" %>
   <div>
     <p id="player_title"><%= @player_summary['username'] %></p>
@@ -10,12 +8,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
 
 <div id="player_stats_container">
   <h1 style="font-family: Overwatch Large ">GENERАL</h1>
@@ -27,6 +19,5 @@
   <p>kda: <%= @player_stats['general']['kda'] %></p>
   <div>
   <%= button_to "subscribe", "/subscribe",  method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
-  <%= button_to "update", "/update_player_stats", method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
 </div>
 </div>
