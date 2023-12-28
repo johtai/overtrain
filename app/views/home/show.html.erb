@@ -5,8 +5,8 @@
   <div>
     <p id="player_title"><%= @player_summary['username'] %></p>
     <div id="p_info">
-      <p>title: <span class="span_color_player"> <%= @player_summary['title'] %></span></p>
-      <p>endorsement level: <span class="span_color_player"><%= @player_summary['endorsement']['level'] %></span></p>
+      <p>Title: <span class="span_color_player"> <%= @player_summary['title'] %></span></p>
+      <p>Endorsement level: <span class="span_color_player"><%= @player_summary['endorsement']['level'] %></span></p>
     </div>
   </div>
 </div>
@@ -25,8 +25,8 @@
   <p>time played: <%= get_hours(@player_stats['general']['time_played']) %></p>
   <p>winrate: <%= @player_stats['general']['winrate'] %></p>
   <p>kda: <%= @player_stats['general']['kda'] %></p>
-  <div>
+  <div style="margin-left: 25%; ">
   <%= button_to "subscribe", "/subscribe",  method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
   <%= button_to "update", "/update_player_stats", method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
-</div>
+  </div>
 </div>
