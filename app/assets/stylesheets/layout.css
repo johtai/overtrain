@@ -251,3 +251,100 @@ footer
         font-size: small;
     }
 }
+
+#random_text
+{
+    font-family: "Overwatch Small";
+    letter-spacing: 3px;
+    font-size: xxx-large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperrandom
+{
+    display: block;
+    margin-top: 60px;
+    margin-left: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.wrapperrandom div
+{
+    display: inline-block;
+    height: 400px;
+}
+
+.wrapperrandom a
+{
+    position: relative;
+    display: inline-block;
+}
+
+.center h2
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center
+{
+    width: 32%;
+    height: auto;
+    background-color: rgba(30, 49, 68, 0.65);
+    backdrop-filter: blur(2px);
+    margin-left: 10px;
+}
+
+#RandomHeroImage
+{
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.64);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#RandomMapImage, #RandomGamemodeImage
+{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.64);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#link
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: "Overwatch Small", "serif";
+    letter-spacing: 1.5px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+#link a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#link a:hover
+{
+    color: wheat;
+}
+
+.desc
+{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    #background-color: rgba(55, 98, 126, 0.65);
+}
