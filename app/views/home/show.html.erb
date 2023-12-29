@@ -19,6 +19,5 @@
   <p>kda: <%= @player_stats['general']['kda'] %></p>
   <div style="margin-left: 25%; ">
   <%= button_to "subscribe", "/subscribe",  method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
-  <%= button_to "update", "/update_player_stats", method: :post, params: { :player_stats => @player_stats, :player_summary => @player_summary }, class:"player_button" %>
   </div>
 </div>

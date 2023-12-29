@@ -4,31 +4,23 @@
   <button  type="submit" class="submit"><i class="fa fa-search"></i></button>
 <% end %>
 
-
-
-<h1 id="welcome_text">Welcome to the OverTrain!</h1>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 <div id="random_text">We have selected for you...</div>
-
 <div class="wrapperrandom">
-
   <div class="center">
      <p style="margin: 20px 40px 0 20px"><%= link_to image_tag("#{@random_hero.portrait}", id:"RandomHeroImage", preload: true ), "/wiki/heroes/#{@random_hero.hero_id}" %></p>
-      <p id="link"><%= link_to "#{@random_hero.name}", "/wiki/heroes/#{@random_hero.hero_id}"  %></p>
+      <p id="link_rand"><%= link_to "#{@random_hero.name}", "/wiki/heroes/#{@random_hero.hero_id}"  %></p>
       <p id="desc"> <%= "#{@random_hero.desc}"%></p>
   </div>
 
   <div class="center">
      <p style="margin: 20px 40px 0 20px"><%= link_to image_tag("#{@random_map.screenshot}", id:"RandomMapImage", preload: true ), "/wiki/maps/#{@random_map["id"]}" %></p>
-     <p id="link"><%= link_to "#{@random_map.name}", "/wiki/maps/#{@random_map["id"]}" %></p>
+     <p id="link_rand"><%= link_to "#{@random_map.name}", "/wiki/maps/#{@random_map["id"]}" %></p>
      <p id="desc"> <%= "#{@random_map.location}"%></p>
   </div>
 
   <div class="center">
       <p style="margin: 20px 40px 0 20px"><%= image_tag("#{@random_gamemode.screenshot}", id:"RandomGamemodeImage", preload: true ) %></p>
-      <p id="link"><%= @random_gamemode.name%></p>
+      <p id="link_rand"><%= @random_gamemode.name%></p>
       <p id="desc"> <%= "#{@random_gamemode.desc}"%></p>
   </div>
 

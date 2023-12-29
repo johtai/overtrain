@@ -1,10 +1,13 @@
 <%hero = @hero%>
 
-  <div id="mainHeroTitle">
+  <div style="display: flex" id="mainHeroTitle">
     <p><%=image_tag("#{hero.portrait}", id: "hPortrait") %></p>
-
+    <div style="text-align: left">
+    <p class="text-white"><%= hero.desc%></p>
+    <p class="text-white"><%= hero.location %></p>
     <p class="text-white"><%= hero.name %></p>
     <p class="text-grey"><%= hero.role %></p>
+  </div>
 
   </div>
 

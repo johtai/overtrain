@@ -29,7 +29,9 @@ class HomeController < ApplicationController
     @player_summary = helpers.get_username_summary(params[:username])
     @player_stats = username_response
 
-    helpers.update_player_stats(@player_summary, @player_stats)
+    if !(username_response["error"] == "Player not found")
+      helpers.update_player_stats(@player_summary, @player_stats)
+    end
   end
 
   # subscribe to a specific player's stats and create a records in Player and Subscription

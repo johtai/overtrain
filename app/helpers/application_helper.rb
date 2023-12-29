@@ -36,7 +36,7 @@ module ApplicationHelper
     maps.each do |map|
       new_map = Map.create(name: map["name"], screenshot: map["screenshot"], gamemodes: map["gamemodes"],
                            location: map["location"], country_code: map["country_code"])
-      new_map.save()
+      new_map.save
     end
   end
   def create_gm_db
@@ -47,7 +47,7 @@ module ApplicationHelper
     gms.each do |gm|
       new_gm = Gamemode.create(key: gm["key"], name: gm["name"], icon: gm["icon"],
                                desc: gm["description"], screenshot: gm["screenshot"])
-      new_gm.save()
+      new_gm.save
     end
   end
   def create_heroes_db
@@ -64,7 +64,7 @@ module ApplicationHelper
                                portrait: attributes["portrait"], role: attributes["role"],
                                location: attributes["location"], hitpoints: attributes["hitpoints"],
                                abilities: attributes["abilities"], story: attributes["story"])
-      new_hero.save()
+      new_hero.save
     end
   end
   def update_player_stats(player_summary, player_stats)

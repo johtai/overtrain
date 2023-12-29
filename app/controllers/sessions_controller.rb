@@ -9,17 +9,17 @@ class SessionsController < ApplicationController
 
     if user.present?
       session[:user_id] = user.user_id
-      redirect_to '/', notice:  'Вы вошли на сайт!'
+      redirect_to '/', notice:  'You have signed in!'
 
     else
-      flash[:alert] = 'Не правильный email или пароль'
+      flash[:alert] = 'Incorrect username or password'
       render :new
     end
   end
 
   def destroy
     session.delete(:user_id)
-    redirect_to '/', notice: 'Вы вышли из аккаунта'
+    redirect_to '/', notice: 'You have signed out'
   end
 
 

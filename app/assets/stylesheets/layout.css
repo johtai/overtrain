@@ -14,7 +14,7 @@ body
     justify-content: space-between;
     align-items: center;
     min-height: 20px;
-    filter: drop-shadow(6px 6px 7px #761300) ;
+    #filter: drop-shadow(6px 6px 7px #761300) ;
 }
 
 .navbar a
@@ -51,7 +51,7 @@ body
     padding-left: 25px;
     padding-right: 25px;
     margin: 5px;
-    text-shadow: 3px 4px 5px #000;
+    #text-shadow: 3px 4px 5px #000;
 
 }
 
@@ -82,7 +82,7 @@ a:hover
     background: #761300;
     min-width: 90px;
     min-height: 30px;
-    text-shadow: 3px 4px 5px #000;
+    #text-shadow: 3px 4px 5px #000;
 }
 
 .simple_button:hover
@@ -96,6 +96,7 @@ a:hover
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 20px;
 
 
 }
@@ -148,7 +149,7 @@ margin: 5px;
     display: flex;
     justify-items: center;
     justify-content: center;
-    text-shadow: 3px 4px 5px #000;
+    #text-shadow: 3px 4px 5px #000;
 }
 
 .wrapper
@@ -204,7 +205,7 @@ footer
     font-size: 35px;
     margin-bottom: 5px;
     margin-top: 0;
-    text-shadow: 3px 4px 5px #000;
+    #text-shadow: 3px 4px 5px #000;
 }
 
 @media (max-width: 1000px ) {
@@ -254,6 +255,7 @@ footer
 
 #random_text
 {
+    font-weight: bold;
     font-family: "Overwatch Small";
     letter-spacing: 3px;
     font-size: xxx-large;
@@ -264,9 +266,9 @@ footer
 
 .wrapperrandom
 {
-    display: block;
-    margin-top: 60px;
-    margin-left: 10px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
     align-content: center;
     justify-content: center;
 }
@@ -296,6 +298,8 @@ footer
     background-color: rgba(30, 49, 68, 0.65);
     backdrop-filter: blur(2px);
     margin-left: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.38);
+    border-radius: 10px;
 }
 
 #RandomHeroImage
@@ -318,7 +322,7 @@ footer
     margin-right: auto;
 }
 
-#link
+#link_rand
 {
     text-align: center;
     margin-top: 0;
@@ -327,24 +331,30 @@ footer
     font-family: "Overwatch Small", "serif";
     letter-spacing: 1.5px;
     font-size: x-large;
-    font-weight: lighter;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
-#link a
+#link_rand a
 {
     text-decoration: none;
     color: white;
 }
 
-#link a:hover
+#link_rand a:hover
 {
     color: wheat;
 }
 
-.desc
+#desc
 {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     #background-color: rgba(55, 98, 126, 0.65);
+    font-family: "Overwatch Small", "serif";
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: normal;
 }
+
