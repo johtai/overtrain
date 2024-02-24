@@ -5,4 +5,8 @@ class SubscriptionTest < ActiveSupport::TestCase
     Subscription = user_id.new
     assert_not Subscription.save, "Saved the subscription without user_id"
   end
+  test "should not save subscription without _id" do
+    Subscription = user_id.new
+    assert_not Subscription.save, "Saved the subscription without user_id"
+  end
 end
